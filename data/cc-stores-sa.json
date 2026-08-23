@@ -1,0 +1,159 @@
+{
+  "scraped": "2026-08-23T15:50:21",
+  "source": "cashconverters.com.au/store-locator/sa",
+  "stores": [
+    {
+      "slug": "adelaidecitysa",
+      "name": "Cash Converters Adelaide City",
+      "address": "Shop 1, 2 and 3, Regent Arcade 101 Rundle Mall, Adelaide SA 5000",
+      "lat": -34.9239056,
+      "lng": 138.6033481,
+      "suburb": "Adelaide",
+      "postcode": "5000"
+    },
+    {
+      "slug": "christiesbeachsa",
+      "name": "Cash Converters Christies Beach",
+      "address": "88 Dyson Road, Noarlunga SA 5168",
+      "lat": -35.139977,
+      "lng": 138.487091,
+      "suburb": "Noarlunga",
+      "postcode": "5168"
+    },
+    {
+      "slug": "clovellyparksa",
+      "name": "Cash Converters Clovelly Park",
+      "address": "1116 South Road, Clovelly Park SA 5042",
+      "lat": -34.993065,
+      "lng": 138.574356,
+      "suburb": "Clovelly Park",
+      "postcode": "5042"
+    },
+    {
+      "slug": "elizabethsa",
+      "name": "Cash Converters Elizabeth",
+      "address": "33 Elizabeth Way, Elizabeth SA 5112",
+      "lat": -34.717448,
+      "lng": 138.665802,
+      "suburb": "Elizabeth",
+      "postcode": "5112"
+    },
+    {
+      "slug": "gawlersa",
+      "name": "Cash Converters Gawler",
+      "address": "119-125 Murray Street, Gawler SA 5118",
+      "lat": -34.597919,
+      "lng": 138.749542,
+      "suburb": "Gawler",
+      "postcode": "5118"
+    },
+    {
+      "slug": "glyndesa",
+      "name": "Cash Converters Glynde",
+      "address": "452-454 Payneham Road, Glynde SA 5070",
+      "lat": -34.891346,
+      "lng": 138.65271,
+      "suburb": "Glynde",
+      "postcode": "5070"
+    },
+    {
+      "slug": "hampsteadgardenssa",
+      "name": "Cash Converters Hampstead Gardens",
+      "address": "312-313 North East Rd, Hampstead Gardens SA 5086",
+      "lat": -34.872108,
+      "lng": 138.635437,
+      "suburb": "Hampstead Gardens",
+      "postcode": "5086"
+    },
+    {
+      "slug": "inglefarmsa",
+      "name": "Cash Converters Ingle Farm",
+      "address": "Shop 1027 Ingle Farm Shopping Centre, Ingle Farm SA 5098",
+      "lat": -34.827957,
+      "lng": 138.647156,
+      "suburb": "Ingle Farm",
+      "postcode": "5098"
+    },
+    {
+      "slug": "kilkennysa",
+      "name": "Cash Converters Kilkenny",
+      "address": "442 Torrens Road, Kilkenny SA 5009",
+      "lat": -34.876503,
+      "lng": 138.551483,
+      "suburb": "Kilkenny",
+      "postcode": "5009"
+    },
+    {
+      "slug": "modburysa",
+      "name": "Cash Converters Modbury",
+      "address": "2/964 North East Road, Modbury SA 5092",
+      "lat": -34.832058,
+      "lng": 138.687012,
+      "suburb": "Modbury",
+      "postcode": "5092"
+    },
+    {
+      "slug": "morphettvalesa",
+      "name": "Cash Converters Morphett Vale",
+      "address": "125 Main South Road, Morphett Vale SA 5162",
+      "lat": -35.125092,
+      "lng": 138.522842,
+      "suburb": "Morphett Vale",
+      "postcode": "5162"
+    },
+    {
+      "slug": "munnoparasa",
+      "name": "Cash Converters Munno Para",
+      "address": "Shop 13&14 Playford Shopping Centre 297 Peachey Road, Munno Para SA 5115",
+      "lat": -34.6704,
+      "lng": 138.6792,
+      "suburb": "Munno Para",
+      "postcode": "5115"
+    },
+    {
+      "slug": "murraybridgesa",
+      "name": "Cash Converters Murray Bridge",
+      "address": "203 Adelaide Road, Murray Bridge SA 5253",
+      "lat": -35.130298,
+      "lng": 139.248008,
+      "suburb": "Murray Bridge",
+      "postcode": "5253"
+    },
+    {
+      "slug": "portadelaidesa",
+      "name": "Cash Converters Port Adelaide",
+      "address": "84 Commercial Road, Port Adelaide SA 5015",
+      "lat": -34.845062,
+      "lng": 138.505432,
+      "suburb": "Port Adelaide",
+      "postcode": "5015"
+    },
+    {
+      "slug": "prospectsa",
+      "name": "Cash Converters Prospect",
+      "address": "278 Main North Road, Prospect SA 5082",
+      "lat": -34.873962,
+      "lng": 138.601593,
+      "suburb": "Prospect",
+      "postcode": "5082"
+    },
+    {
+      "slug": "salisburysa",
+      "name": "Cash Converters Salisbury",
+      "address": "85 John Street, Salisbury SA 5108",
+      "lat": -34.762367,
+      "lng": 138.646912,
+      "suburb": "Salisbury",
+      "postcode": "5108"
+    },
+    {
+      "slug": "torrensvillesa",
+      "name": "Cash Converters Torrensville",
+      "address": "164 Henley Beach Road, Torrensville SA 5031",
+      "lat": -34.923843,
+      "lng": 138.562866,
+      "suburb": "Torrensville",
+      "postcode": "5031"
+    }
+  ]
+}

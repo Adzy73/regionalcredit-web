@@ -1,0 +1,5273 @@
+{
+  "meta": {
+    "generated": "2026-08-23T16:30:01",
+    "method": "spatial per-locality classification (GeoNames postcode coords)",
+    "reference_point": "Adelaide GPO",
+    "threshold_km": 63.1,
+    "hard_allow_beyond_km": 78.1,
+    "auto_deny_within_km": 48.1,
+    "store_radius_km": 40.0,
+    "store_count": 17,
+    "status": "PROVISIONAL \u2014 pending written HQ ruling on threshold definition",
+    "default": "deny",
+    "override_postcodes_active": [
+      "5290",
+      "5291",
+      "5600",
+      "5606",
+      "5607",
+      "5608",
+      "5609",
+      "5700",
+      "5710"
+    ],
+    "revoked_overrides": []
+  },
+  "postcodes": {
+    "0872": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Fregon",
+        "Kanpi",
+        "Mimili",
+        "Indulkana",
+        "Ernabella",
+        "Iwantja",
+        "Watarru",
+        "Tieyon",
+        "De Rose Hill",
+        "Ayers Range South",
+        "Indulkana (Iwantja)",
+        "Umuwa",
+        "Pukatja",
+        "Lambina",
+        "Kaltjiti",
+        "Watinuma",
+        "Nyapari",
+        "Murputja",
+        "Pipalyatjara",
+        "Kalka",
+        "Ernabella (Pukatja)",
+        "Yunyarinyi"
+      ],
+      "km_from_gpo_min": 1511.5,
+      "km_from_gpo_max": 1511.5,
+      "km_to_store_min": 1482.7
+    },
+    "5000": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Adelaide Bc",
+        "Station Arcade",
+        "Sturt Street",
+        "Adelaide",
+        "Rundle Mall",
+        "Halifax Street",
+        "City West Campus",
+        "Parliament House",
+        "Hutt Street"
+      ],
+      "km_from_gpo_min": 0.2,
+      "km_from_gpo_max": 0.2,
+      "km_to_store_min": 0.7
+    },
+    "5001": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Adelaide"
+      ],
+      "km_from_gpo_min": 0.2,
+      "km_from_gpo_max": 0.2,
+      "km_to_store_min": 0.7
+    },
+    "5005": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "The University Of Adelaide",
+        "Adelaide University",
+        "University Of Adelaide"
+      ],
+      "km_from_gpo_min": 4.4,
+      "km_from_gpo_max": 4.4,
+      "km_to_store_min": 2.9
+    },
+    "5006": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "North Adelaide Melbourne St",
+        "North Adelaide"
+      ],
+      "km_from_gpo_min": 2.5,
+      "km_from_gpo_max": 2.5,
+      "km_to_store_min": 2.1
+    },
+    "5007": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "West Hindmarsh",
+        "Welland",
+        "Bowden",
+        "Brompton",
+        "Hindmarsh"
+      ],
+      "km_from_gpo_min": 3.5,
+      "km_from_gpo_max": 4.7,
+      "km_to_store_min": 1.8
+    },
+    "5008": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Devon Park",
+        "Croydon",
+        "Croydon Park",
+        "West Croydon",
+        "Croydon Park South",
+        "Renown Park",
+        "Ridleyton",
+        "Dudley Park"
+      ],
+      "km_from_gpo_min": 4.6,
+      "km_from_gpo_max": 6.3,
+      "km_to_store_min": 1.5
+    },
+    "5009": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Kilkenny",
+        "Allenby Gardens",
+        "Beverley"
+      ],
+      "km_from_gpo_min": 5.5,
+      "km_from_gpo_max": 7.0,
+      "km_to_store_min": 0.3
+    },
+    "5010": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Regency Park",
+        "Angle Park",
+        "Ferryden Park",
+        "Regency Park Bc"
+      ],
+      "km_from_gpo_min": 7.8,
+      "km_from_gpo_max": 8.6,
+      "km_to_store_min": 1.5
+    },
+    "5011": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Woodville South",
+        "St Claire",
+        "Woodville",
+        "St Clair",
+        "Woodville West",
+        "Woodville Park"
+      ],
+      "km_from_gpo_min": 6.8,
+      "km_from_gpo_max": 8.8,
+      "km_to_store_min": 0.8
+    },
+    "5012": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Mansfield Park",
+        "Athol Park",
+        "Woodville North",
+        "Woodville Gardens"
+      ],
+      "km_from_gpo_min": 8.2,
+      "km_from_gpo_max": 9.6,
+      "km_to_store_min": 0.9
+    },
+    "5013": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Ottoway",
+        "Gillman",
+        "Rosewater",
+        "Pennington",
+        "Rosewater East",
+        "Wingfield"
+      ],
+      "km_from_gpo_min": 9.3,
+      "km_from_gpo_max": 11.8,
+      "km_to_store_min": 1.7
+    },
+    "5014": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Queenstown",
+        "Albert Park",
+        "Royal Park",
+        "Hendon",
+        "Cheltenham",
+        "Alberton"
+      ],
+      "km_from_gpo_min": 9.7,
+      "km_from_gpo_max": 11.2,
+      "km_to_store_min": 1.8
+    },
+    "5015": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "New Port",
+        "Glanville",
+        "Garden Island",
+        "Port Adelaide",
+        "Torrens Island",
+        "Port Adelaide Dc",
+        "Ethelton",
+        "Birkenhead",
+        "Port Adelaide Bc"
+      ],
+      "km_from_gpo_min": 12.8,
+      "km_from_gpo_max": 13.9,
+      "km_to_store_min": 0.3
+    },
+    "5016": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Peterhead",
+        "Largs North",
+        "Largs Bay"
+      ],
+      "km_from_gpo_min": 14.3,
+      "km_from_gpo_max": 15.6,
+      "km_to_store_min": 1.7
+    },
+    "5017": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Taperoo",
+        "Osborne"
+      ],
+      "km_from_gpo_min": 16.8,
+      "km_from_gpo_max": 17.3,
+      "km_to_store_min": 4.6
+    },
+    "5018": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "North Haven",
+        "Outer Harbor"
+      ],
+      "km_from_gpo_min": 18.5,
+      "km_from_gpo_max": 19.8,
+      "km_to_store_min": 6.4
+    },
+    "5019": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Semaphore Park",
+        "Exeter",
+        "Semaphore",
+        "Semaphore South"
+      ],
+      "km_from_gpo_min": 14.1,
+      "km_from_gpo_max": 14.7,
+      "km_to_store_min": 1.6
+    },
+    "5020": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "West Lakes Shore"
+      ],
+      "km_from_gpo_min": 12.7,
+      "km_from_gpo_max": 12.7,
+      "km_to_store_min": 2.2
+    },
+    "5021": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "West Lakes"
+      ],
+      "km_from_gpo_min": 11.5,
+      "km_from_gpo_max": 11.5,
+      "km_to_store_min": 3.3
+    },
+    "5022": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Henley Beach South",
+        "Tennyson",
+        "Henley Beach",
+        "Kirkcaldy",
+        "Grange"
+      ],
+      "km_from_gpo_min": 9.6,
+      "km_from_gpo_max": 11.5,
+      "km_to_store_min": 4.9
+    },
+    "5023": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Findon",
+        "Seaton",
+        "Seaton North"
+      ],
+      "km_from_gpo_min": 6.9,
+      "km_from_gpo_max": 8.3,
+      "km_to_store_min": 3.1
+    },
+    "5024": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Fulham Gardens",
+        "West Beach",
+        "Fulham"
+      ],
+      "km_from_gpo_min": 7.9,
+      "km_from_gpo_max": 8.5,
+      "km_to_store_min": 4.5
+    },
+    "5025": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Kidman Park",
+        "Flinders Park"
+      ],
+      "km_from_gpo_min": 5.6,
+      "km_from_gpo_max": 7.0,
+      "km_to_store_min": 2.3
+    },
+    "5031": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Torrensville",
+        "Torrensville Plaza",
+        "Thebarton",
+        "Mile End South",
+        "Mile End"
+      ],
+      "km_from_gpo_min": 2.6,
+      "km_from_gpo_max": 3.7,
+      "km_to_store_min": 0.4
+    },
+    "5032": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Brooklyn Park",
+        "Underdale",
+        "Lockleys"
+      ],
+      "km_from_gpo_min": 5.0,
+      "km_from_gpo_max": 6.6,
+      "km_to_store_min": 1.6
+    },
+    "5033": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Marleston Dc",
+        "Richmond",
+        "Marleston",
+        "Hilton",
+        "Hilton Plaza",
+        "Cowandilla",
+        "West Richmond"
+      ],
+      "km_from_gpo_min": 3.3,
+      "km_from_gpo_max": 4.6,
+      "km_to_store_min": 0.9
+    },
+    "5034": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Kings Park",
+        "Millswood",
+        "Clarence Park",
+        "Wayville",
+        "Goodwood"
+      ],
+      "km_from_gpo_min": 2.0,
+      "km_from_gpo_max": 4.3,
+      "km_to_store_min": 2.6
+    },
+    "5035": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Keswick",
+        "Black Forest",
+        "Everard Park",
+        "Ashford",
+        "Forestville",
+        "Keswick Terminal"
+      ],
+      "km_from_gpo_min": 2.3,
+      "km_from_gpo_max": 4.1,
+      "km_to_store_min": 2.3
+    },
+    "5037": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Glandore",
+        "Netley",
+        "North Plympton",
+        "Kurralta Park"
+      ],
+      "km_from_gpo_min": 4.0,
+      "km_from_gpo_max": 5.4,
+      "km_to_store_min": 3.0
+    },
+    "5038": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "South Plympton",
+        "Plympton",
+        "Camden Park",
+        "Plympton Park"
+      ],
+      "km_from_gpo_min": 5.6,
+      "km_from_gpo_max": 7.4,
+      "km_to_store_min": 2.5
+    },
+    "5039": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Edwardstown",
+        "Melrose Park Dc",
+        "Clarence Gardens",
+        "Melrose Park"
+      ],
+      "km_from_gpo_min": 5.5,
+      "km_from_gpo_max": 6.5,
+      "km_to_store_min": 1.1
+    },
+    "5040": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Novar Gardens"
+      ],
+      "km_from_gpo_min": 7.5,
+      "km_from_gpo_max": 7.5,
+      "km_to_store_min": 4.8
+    },
+    "5041": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Panorama",
+        "Cumberland Park",
+        "Daw Park",
+        "Colonel Light Gardens",
+        "Westbourne Park"
+      ],
+      "km_from_gpo_min": 4.8,
+      "km_from_gpo_max": 7.0,
+      "km_to_store_min": 1.0
+    },
+    "5042": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Clovelly Park",
+        "Flinders University",
+        "St Marys",
+        "Pasadena",
+        "Tonsley",
+        "Bedford Park"
+      ],
+      "km_from_gpo_min": 8.3,
+      "km_from_gpo_max": 10.8,
+      "km_to_store_min": 0.8
+    },
+    "5043": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Morphettville",
+        "Park Holme",
+        "Mitchell Park",
+        "Ascot Park",
+        "Marion"
+      ],
+      "km_from_gpo_min": 8.0,
+      "km_from_gpo_max": 9.7,
+      "km_to_store_min": 1.5
+    },
+    "5044": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Glengowrie",
+        "Somerton Park"
+      ],
+      "km_from_gpo_min": 8.7,
+      "km_from_gpo_max": 10.5,
+      "km_to_store_min": 3.5
+    },
+    "5045": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Glenelg Jetty Road",
+        "Glenelg",
+        "Glenelg South",
+        "Glenelg North",
+        "Glenelg East"
+      ],
+      "km_from_gpo_min": 8.4,
+      "km_from_gpo_max": 10.4,
+      "km_to_store_min": 4.5
+    },
+    "5046": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Warradale",
+        "Warradale North",
+        "Oaklands Park"
+      ],
+      "km_from_gpo_min": 9.9,
+      "km_from_gpo_max": 10.1,
+      "km_to_store_min": 3.1
+    },
+    "5047": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Darlington",
+        "Seacombe Gardens",
+        "Seacombe Heights",
+        "Sturt"
+      ],
+      "km_from_gpo_min": 11.3,
+      "km_from_gpo_max": 12.6,
+      "km_to_store_min": 3.8
+    },
+    "5048": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "South Brighton",
+        "Hove",
+        "North Brighton",
+        "Brighton",
+        "Dover Gardens"
+      ],
+      "km_from_gpo_min": 10.9,
+      "km_from_gpo_max": 12.8,
+      "km_to_store_min": 4.8
+    },
+    "5049": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Seacliff",
+        "Marino",
+        "Seacliff Park",
+        "Kingston Park",
+        "Seaview Downs"
+      ],
+      "km_from_gpo_min": 12.9,
+      "km_from_gpo_max": 15.2,
+      "km_to_store_min": 5.7
+    },
+    "5050": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Eden Hills",
+        "Bellevue Heights"
+      ],
+      "km_from_gpo_min": 10.3,
+      "km_from_gpo_max": 11.4,
+      "km_to_store_min": 3.7
+    },
+    "5051": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Hawthorndene",
+        "Coromandel Valley",
+        "Craigburn Farm",
+        "Blackwood"
+      ],
+      "km_from_gpo_min": 10.4,
+      "km_from_gpo_max": 13.6,
+      "km_to_store_min": 4.8
+    },
+    "5052": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Belair",
+        "Glenalta"
+      ],
+      "km_from_gpo_min": 7.9,
+      "km_from_gpo_max": 9.1,
+      "km_to_store_min": 4.3
+    },
+    "5061": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Hyde Park",
+        "Unley Dc",
+        "Malvern",
+        "Unley Bc",
+        "Unley Park",
+        "Unley"
+      ],
+      "km_from_gpo_min": 2.4,
+      "km_from_gpo_max": 4.0,
+      "km_to_store_min": 2.9
+    },
+    "5062": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Hawthorn",
+        "Lower Mitcham",
+        "Clapham",
+        "Mitcham Shopping Centre",
+        "Lynton",
+        "Torrens Park",
+        "Kingswood",
+        "Netherby",
+        "Brown Hill Creek",
+        "Springfield",
+        "Mitcham"
+      ],
+      "km_from_gpo_min": 4.9,
+      "km_from_gpo_max": 7.7,
+      "km_to_store_min": 2.5
+    },
+    "5063": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Highgate",
+        "Eastwood",
+        "Parkside",
+        "Frewville",
+        "Fullarton"
+      ],
+      "km_from_gpo_min": 2.1,
+      "km_from_gpo_max": 4.2,
+      "km_to_store_min": 2.5
+    },
+    "5064": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Glen Osmond",
+        "Glenunga",
+        "Myrtle Bank",
+        "Mount Osmond",
+        "St Georges",
+        "Urrbrae"
+      ],
+      "km_from_gpo_min": 4.2,
+      "km_from_gpo_max": 6.4,
+      "km_to_store_min": 4.3
+    },
+    "5065": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Linden Park",
+        "Toorak Gardens",
+        "Dulwich",
+        "Glenside",
+        "Tusmore"
+      ],
+      "km_from_gpo_min": 2.6,
+      "km_from_gpo_max": 4.7,
+      "km_to_store_min": 2.6
+    },
+    "5066": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Stonyfell",
+        "Beaumont",
+        "Burnside",
+        "Erindale",
+        "Wattle Park",
+        "Hazelwood Park",
+        "Waterfall Gully"
+      ],
+      "km_from_gpo_min": 5.4,
+      "km_from_gpo_max": 8.3,
+      "km_to_store_min": 4.2
+    },
+    "5067": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Norwood",
+        "Beulah Park",
+        "Kent Town",
+        "Rose Park",
+        "Norwood South"
+      ],
+      "km_from_gpo_min": 1.9,
+      "km_from_gpo_max": 4.2,
+      "km_to_store_min": 1.5
+    },
+    "5068": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Leabrook",
+        "Kensington Gardens",
+        "St Morris",
+        "Trinity Gardens",
+        "Marryatville",
+        "Kensington",
+        "Kensington Park",
+        "Heathpool"
+      ],
+      "km_from_gpo_min": 4.0,
+      "km_from_gpo_max": 5.6,
+      "km_to_store_min": 2.2
+    },
+    "5069": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Evandale",
+        "Maylands",
+        "College Park",
+        "Hackney",
+        "Stepney",
+        "St Peters"
+      ],
+      "km_from_gpo_min": 2.2,
+      "km_from_gpo_max": 4.1,
+      "km_to_store_min": 1.6
+    },
+    "5070": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Payneham South",
+        "Glynde",
+        "Royston Park",
+        "Firle",
+        "Glynde Dc",
+        "Felixstow",
+        "Glynde Plaza",
+        "Joslin",
+        "Payneham",
+        "Marden"
+      ],
+      "km_from_gpo_min": 4.0,
+      "km_from_gpo_max": 6.1,
+      "km_to_store_min": 0.5
+    },
+    "5071": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Kent Town Dc",
+        "Kent Town"
+      ],
+      "km_from_gpo_min": 1.9,
+      "km_from_gpo_max": 1.9,
+      "km_to_store_min": 1.5
+    },
+    "5072": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Teringie",
+        "Rosslyn Park",
+        "Woodforde",
+        "Skye",
+        "Magill",
+        "Auldana",
+        "Magill North",
+        "Magill South"
+      ],
+      "km_from_gpo_min": 6.9,
+      "km_from_gpo_max": 9.4,
+      "km_to_store_min": 2.8
+    },
+    "5073": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Rostrevor",
+        "Tranmere North",
+        "Tranmere",
+        "Hectorville"
+      ],
+      "km_from_gpo_min": 6.2,
+      "km_from_gpo_max": 7.9,
+      "km_to_store_min": 0.6
+    },
+    "5074": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Newton",
+        "Campbelltown"
+      ],
+      "km_from_gpo_min": 7.9,
+      "km_from_gpo_max": 9.1,
+      "km_to_store_min": 1.6
+    },
+    "5075": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Paradise",
+        "Dernancourt"
+      ],
+      "km_from_gpo_min": 8.7,
+      "km_from_gpo_max": 10.2,
+      "km_to_store_min": 2.5
+    },
+    "5076": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Athelstone",
+        "Castambul"
+      ],
+      "km_from_gpo_min": 11.2,
+      "km_from_gpo_max": 11.2,
+      "km_to_store_min": 4.4
+    },
+    "5081": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Vale Park",
+        "Gilberton",
+        "Collinswood",
+        "Walkerville",
+        "Medindie Gardens",
+        "Medindie"
+      ],
+      "km_from_gpo_min": 3.3,
+      "km_from_gpo_max": 5.3,
+      "km_to_store_min": 1.7
+    },
+    "5082": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Ovingham",
+        "Prospect West",
+        "Prospect",
+        "Prospect East",
+        "Fitzroy",
+        "Thorngate"
+      ],
+      "km_from_gpo_min": 3.4,
+      "km_from_gpo_max": 5.2,
+      "km_to_store_min": 1.2
+    },
+    "5083": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Broadview",
+        "Sefton Park",
+        "Nailsworth"
+      ],
+      "km_from_gpo_min": 5.0,
+      "km_from_gpo_max": 6.1,
+      "km_to_store_min": 0.2
+    },
+    "5084": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Kilburn",
+        "Blair Athol",
+        "Kilburn North",
+        "Blair Athol West"
+      ],
+      "km_from_gpo_min": 7.8,
+      "km_from_gpo_max": 7.8,
+      "km_to_store_min": 1.7
+    },
+    "5085": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Enfield Plaza",
+        "Enfield",
+        "Lightsview",
+        "Clearview",
+        "Northgate",
+        "Northfield"
+      ],
+      "km_from_gpo_min": 8.0,
+      "km_from_gpo_max": 9.1,
+      "km_to_store_min": 1.7
+    },
+    "5086": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Greenacres",
+        "Oakden",
+        "Manningham",
+        "Hampstead Gardens",
+        "Gilles Plains",
+        "Hillcrest"
+      ],
+      "km_from_gpo_min": 6.0,
+      "km_from_gpo_max": 9.8,
+      "km_to_store_min": 0.7
+    },
+    "5087": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Windsor Gardens",
+        "Klemzig"
+      ],
+      "km_from_gpo_min": 6.4,
+      "km_from_gpo_max": 8.2,
+      "km_to_store_min": 0.8
+    },
+    "5088": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Holden Hill"
+      ],
+      "km_from_gpo_min": 10.8,
+      "km_from_gpo_max": 10.8,
+      "km_to_store_min": 2.6
+    },
+    "5089": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Highbury"
+      ],
+      "km_from_gpo_min": 12.2,
+      "km_from_gpo_max": 12.2,
+      "km_to_store_min": 2.5
+    },
+    "5090": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Hope Valley"
+      ],
+      "km_from_gpo_min": 14.0,
+      "km_from_gpo_max": 14.0,
+      "km_to_store_min": 1.2
+    },
+    "5091": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Banksia Park",
+        "Vista",
+        "Tea Tree Gully"
+      ],
+      "km_from_gpo_min": 15.2,
+      "km_from_gpo_max": 18.0,
+      "km_to_store_min": 3.3
+    },
+    "5092": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Modbury North",
+        "Modbury Heights",
+        "Modbury North Dc",
+        "Modbury"
+      ],
+      "km_from_gpo_min": 13.0,
+      "km_from_gpo_max": 15.3,
+      "km_to_store_min": 0.4
+    },
+    "5093": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Para Vista",
+        "Valley View"
+      ],
+      "km_from_gpo_min": 11.3,
+      "km_from_gpo_max": 13.2,
+      "km_to_store_min": 1.5
+    },
+    "5094": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Cavan",
+        "Dry Creek",
+        "Gepps Cross"
+      ],
+      "km_from_gpo_min": 9.7,
+      "km_from_gpo_max": 11.9,
+      "km_to_store_min": 3.7
+    },
+    "5095": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Pooraka",
+        "Mawson Lakes",
+        "The Levels"
+      ],
+      "km_from_gpo_min": 11.8,
+      "km_from_gpo_max": 12.6,
+      "km_to_store_min": 1.9
+    },
+    "5096": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Gulfview Heights",
+        "Para Hills West",
+        "Para Hills"
+      ],
+      "km_from_gpo_min": 14.0,
+      "km_from_gpo_max": 16.1,
+      "km_to_store_min": 2.0
+    },
+    "5097": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Ridgehaven",
+        "St Agnes",
+        "Redwood Park"
+      ],
+      "km_from_gpo_min": 14.8,
+      "km_from_gpo_max": 16.2,
+      "km_to_store_min": 2.0
+    },
+    "5098": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Ingle Farm",
+        "Walkley Heights"
+      ],
+      "km_from_gpo_min": 11.0,
+      "km_from_gpo_max": 11.0,
+      "km_to_store_min": 1.0
+    },
+    "5106": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Salisbury South Dc",
+        "Parafield",
+        "Salisbury South Bc",
+        "Parafield Airport",
+        "Salisbury South"
+      ],
+      "km_from_gpo_min": 15.9,
+      "km_from_gpo_max": 17.0,
+      "km_to_store_min": 2.0
+    },
+    "5107": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Green Fields",
+        "Parafield Gardens"
+      ],
+      "km_from_gpo_min": 14.3,
+      "km_from_gpo_max": 16.3,
+      "km_to_store_min": 4.0
+    },
+    "5108": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Salisbury Downs",
+        "Salisbury North Whites Road",
+        "Paralowie",
+        "Salisbury North",
+        "Salisbury"
+      ],
+      "km_from_gpo_min": 18.0,
+      "km_from_gpo_max": 20.0,
+      "km_to_store_min": 1.3
+    },
+    "5109": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Salisbury East",
+        "Salisbury Plain",
+        "Brahma Lodge",
+        "Salisbury Park",
+        "Salisbury Heights",
+        "Salisbury East Northbri Ave"
+      ],
+      "km_from_gpo_min": 16.1,
+      "km_from_gpo_max": 19.7,
+      "km_to_store_min": 1.6
+    },
+    "5110": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "St Kilda",
+        "Globe Derby Park",
+        "Direk",
+        "Burton",
+        "Bolivar",
+        "Waterloo Corner"
+      ],
+      "km_from_gpo_min": 15.7,
+      "km_from_gpo_max": 23.6,
+      "km_to_store_min": 5.2
+    },
+    "5111": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Edinburgh Raaf",
+        "Edinburgh"
+      ],
+      "km_from_gpo_min": 20.6,
+      "km_from_gpo_max": 20.6,
+      "km_to_store_min": 2.0
+    },
+    "5112": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Elizabeth",
+        "Hillbank",
+        "Elizabeth Grove",
+        "Elizabeth Vale",
+        "Elizabeth South",
+        "Elizabeth East"
+      ],
+      "km_from_gpo_min": 21.0,
+      "km_from_gpo_max": 24.1,
+      "km_to_store_min": 0.5
+    },
+    "5113": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Edinburgh North",
+        "Davoren Park South",
+        "Davoren Park",
+        "Elizabeth North",
+        "Davoren Park North",
+        "Elizabeth West Dc",
+        "Elizabeth Park",
+        "Elizabeth Downs",
+        "Elizabeth West"
+      ],
+      "km_from_gpo_min": 25.6,
+      "km_from_gpo_max": 27.2,
+      "km_to_store_min": 1.5
+    },
+    "5114": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Uleybury",
+        "Humbug Scrub",
+        "Sampson Flat",
+        "Blakeview",
+        "Smithfield",
+        "One Tree Hill",
+        "Craigmore",
+        "Smithfield Plains",
+        "Smithfield West",
+        "Andrews Farm",
+        "Yattalunga",
+        "Gould Creek"
+      ],
+      "km_from_gpo_min": 22.9,
+      "km_from_gpo_max": 32.9,
+      "km_to_store_min": 0.7
+    },
+    "5115": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Munno Para",
+        "Munno Para Downs",
+        "Munno Para West",
+        "Kudla"
+      ],
+      "km_from_gpo_min": 30.4,
+      "km_from_gpo_max": 33.2,
+      "km_to_store_min": 1.7
+    },
+    "5116": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Evanston",
+        "Evanston Gardens",
+        "Evanston South",
+        "Evanston Park",
+        "Hillier"
+      ],
+      "km_from_gpo_min": 33.0,
+      "km_from_gpo_max": 36.8,
+      "km_to_store_min": 2.5
+    },
+    "5117": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Angle Vale"
+      ],
+      "km_from_gpo_min": 32.3,
+      "km_from_gpo_max": 32.3,
+      "km_to_store_min": 4.5
+    },
+    "5118": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Buchfelde",
+        "Willaston",
+        "Kalbeeba",
+        "Gawler River",
+        "Kingsford",
+        "Gawler East",
+        "Bibaringa",
+        "Gawler South",
+        "Reid",
+        "Concordia",
+        "Gawler Belt",
+        "Gawler",
+        "Gawler West",
+        "Kangaroo Flat",
+        "Hewett",
+        "Ward Belt"
+      ],
+      "km_from_gpo_min": 35.3,
+      "km_from_gpo_max": 43.6,
+      "km_to_store_min": 0.5
+    },
+    "5120": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Riverlea Park",
+        "Buckland Park",
+        "Virginia"
+      ],
+      "km_from_gpo_min": 27.6,
+      "km_from_gpo_max": 29.4,
+      "km_to_store_min": 10.9
+    },
+    "5121": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Eyre",
+        "Penfield Gardens",
+        "Penfield",
+        "Macdonald Park"
+      ],
+      "km_from_gpo_min": 26.2,
+      "km_from_gpo_max": 30.9,
+      "km_to_store_min": 3.4
+    },
+    "5125": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Golden Grove",
+        "Golden Grove Village",
+        "Greenwith"
+      ],
+      "km_from_gpo_min": 20.2,
+      "km_from_gpo_max": 20.9,
+      "km_to_store_min": 6.1
+    },
+    "5126": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Yatala Vale",
+        "Surrey Downs",
+        "Fairview Park"
+      ],
+      "km_from_gpo_min": 17.6,
+      "km_from_gpo_max": 19.7,
+      "km_to_store_min": 4.3
+    },
+    "5127": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Wynn Vale"
+      ],
+      "km_from_gpo_min": 16.4,
+      "km_from_gpo_max": 16.4,
+      "km_to_store_min": 3.6
+    },
+    "5131": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Upper Hermitage",
+        "Houghton",
+        "Lower Hermitage"
+      ],
+      "km_from_gpo_min": 18.4,
+      "km_from_gpo_max": 20.6,
+      "km_to_store_min": 6.8
+    },
+    "5132": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Paracombe"
+      ],
+      "km_from_gpo_min": 18.6,
+      "km_from_gpo_max": 18.6,
+      "km_to_store_min": 8.7
+    },
+    "5133": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Inglewood"
+      ],
+      "km_from_gpo_min": 19.6,
+      "km_from_gpo_max": 19.6,
+      "km_to_store_min": 8.0
+    },
+    "5134": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Cherryville",
+        "Montacute"
+      ],
+      "km_from_gpo_min": 14.3,
+      "km_from_gpo_max": 15.2,
+      "km_to_store_min": 8.4
+    },
+    "5136": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Norton Summit"
+      ],
+      "km_from_gpo_min": 11.4,
+      "km_from_gpo_max": 11.4,
+      "km_to_store_min": 7.5
+    },
+    "5137": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Ashton",
+        "Marble Hill"
+      ],
+      "km_from_gpo_min": 12.5,
+      "km_from_gpo_max": 12.5,
+      "km_to_store_min": 9.4
+    },
+    "5138": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Basket Range"
+      ],
+      "km_from_gpo_min": 15.0,
+      "km_from_gpo_max": 15.0,
+      "km_to_store_min": 11.6
+    },
+    "5139": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Forest Range"
+      ],
+      "km_from_gpo_min": 18.8,
+      "km_from_gpo_max": 18.8,
+      "km_to_store_min": 14.6
+    },
+    "5140": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Greenhill"
+      ],
+      "km_from_gpo_min": 8.6,
+      "km_from_gpo_max": 8.6,
+      "km_to_store_min": 7.4
+    },
+    "5141": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Horsnell Gully",
+        "Summertown"
+      ],
+      "km_from_gpo_min": 9.5,
+      "km_from_gpo_max": 12.4,
+      "km_to_store_min": 6.8
+    },
+    "5142": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Uraidla"
+      ],
+      "km_from_gpo_min": 13.5,
+      "km_from_gpo_max": 13.5,
+      "km_to_store_min": 11.0
+    },
+    "5144": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Carey Gully"
+      ],
+      "km_from_gpo_min": 15.2,
+      "km_from_gpo_max": 15.2,
+      "km_to_store_min": 12.9
+    },
+    "5150": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Eagle On The Hill",
+        "Leawood Gardens"
+      ],
+      "km_from_gpo_min": 8.3,
+      "km_from_gpo_max": 8.3,
+      "km_to_store_min": 8.5
+    },
+    "5151": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Piccadilly"
+      ],
+      "km_from_gpo_min": 13.0,
+      "km_from_gpo_max": 13.0,
+      "km_to_store_min": 11.9
+    },
+    "5152": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Stirling",
+        "Mount Lofty",
+        "Cleland",
+        "Crafers West",
+        "Crafers"
+      ],
+      "km_from_gpo_min": 9.7,
+      "km_from_gpo_max": 13.6,
+      "km_to_store_min": 9.5
+    },
+    "5153": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Macclesfield",
+        "Echunga",
+        "Heathfield",
+        "Mylor",
+        "Jupiter Creek",
+        "Bradbury",
+        "Green Hills Range",
+        "Ironbank",
+        "Longwood",
+        "Chapel Hill",
+        "Flaxley",
+        "Scott Creek",
+        "Biggs Flat"
+      ],
+      "km_from_gpo_min": 15.3,
+      "km_from_gpo_max": 34.5,
+      "km_to_store_min": 11.8
+    },
+    "5154": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Aldgate"
+      ],
+      "km_from_gpo_min": 15.6,
+      "km_from_gpo_max": 15.6,
+      "km_to_store_min": 14.7
+    },
+    "5155": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Bridgewater",
+        "Mount George"
+      ],
+      "km_from_gpo_min": 17.8,
+      "km_from_gpo_max": 17.8,
+      "km_to_store_min": 17.1
+    },
+    "5156": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Upper Sturt"
+      ],
+      "km_from_gpo_min": 12.4,
+      "km_from_gpo_max": 12.4,
+      "km_to_store_min": 10.3
+    },
+    "5157": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Dorset Vale",
+        "Cherry Gardens",
+        "Kangarilla",
+        "Bull Creek",
+        "Mcharg Creek",
+        "Clarendon",
+        "Ashbourne",
+        "Coromandel East"
+      ],
+      "km_from_gpo_min": 13.8,
+      "km_from_gpo_max": 42.6,
+      "km_to_store_min": 8.6
+    },
+    "5158": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "O'Halloran Hill",
+        "O\u2019Halloran Hill",
+        "Hallett Cove",
+        "Trott Park",
+        "O'Halloran Hill Dc",
+        "Sheidow Park"
+      ],
+      "km_from_gpo_min": 16.0,
+      "km_from_gpo_max": 18.5,
+      "km_to_store_min": 5.1
+    },
+    "5159": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Flagstaff Hill",
+        "Happy Valley",
+        "Aberfoyle Park",
+        "Chandlers Hill"
+      ],
+      "km_from_gpo_min": 13.4,
+      "km_from_gpo_max": 17.6,
+      "km_to_store_min": 6.2
+    },
+    "5160": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Lonsdale Dc",
+        "Port Stanvac",
+        "Lonsdale"
+      ],
+      "km_from_gpo_min": 22.1,
+      "km_from_gpo_max": 22.1,
+      "km_to_store_min": 3.4
+    },
+    "5161": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Old Reynella",
+        "Reynella",
+        "Reynella East"
+      ],
+      "km_from_gpo_min": 18.6,
+      "km_from_gpo_max": 20.4,
+      "km_to_store_min": 2.6
+    },
+    "5162": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Woodcroft",
+        "Morphett Vale"
+      ],
+      "km_from_gpo_min": 19.6,
+      "km_from_gpo_max": 24.0,
+      "km_to_store_min": 1.1
+    },
+    "5163": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Hackham",
+        "Onkaparinga Heights",
+        "Huntfield Heights",
+        "Onkaparinga Hills",
+        "Hackham West"
+      ],
+      "km_from_gpo_min": 23.2,
+      "km_from_gpo_max": 26.3,
+      "km_to_store_min": 2.1
+    },
+    "5164": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Christie Downs"
+      ],
+      "km_from_gpo_min": 24.3,
+      "km_from_gpo_max": 24.3,
+      "km_to_store_min": 1.4
+    },
+    "5165": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Christies Beach",
+        "Christies Beach North"
+      ],
+      "km_from_gpo_min": 26.1,
+      "km_from_gpo_max": 26.1,
+      "km_to_store_min": 1.4
+    },
+    "5166": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "O\u2019Sullivan Beach",
+        "O'Sullivan Beach"
+      ],
+      "km_from_gpo_min": 24.1,
+      "km_from_gpo_max": 24.1,
+      "km_to_store_min": 2.7
+    },
+    "5167": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Port Noarlunga South",
+        "Port Noarlunga"
+      ],
+      "km_from_gpo_min": 27.1,
+      "km_from_gpo_max": 29.8,
+      "km_to_store_min": 1.7
+    },
+    "5168": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Old Noarlunga",
+        "Noarlunga Downs",
+        "Noarlunga Centre"
+      ],
+      "km_from_gpo_min": 25.6,
+      "km_from_gpo_max": 29.6,
+      "km_to_store_min": 0.4
+    },
+    "5169": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Seaford",
+        "Seaford Rise",
+        "Seaford Heights",
+        "Seaford Meadows",
+        "Moana"
+      ],
+      "km_from_gpo_min": 29.0,
+      "km_from_gpo_max": 31.6,
+      "km_to_store_min": 3.7
+    },
+    "5170": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Maslin Beach"
+      ],
+      "km_from_gpo_min": 34.8,
+      "km_from_gpo_max": 34.8,
+      "km_to_store_min": 9.6
+    },
+    "5171": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Pedler Creek",
+        "Tatachilla",
+        "Mclaren Flat",
+        "Blewitt Springs",
+        "Mclaren Vale"
+      ],
+      "km_from_gpo_min": 32.1,
+      "km_from_gpo_max": 35.3,
+      "km_to_store_min": 10.2
+    },
+    "5172": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Yundi",
+        "Kuitpo Colony",
+        "Hope Forest",
+        "Kuitpo",
+        "Kyeema",
+        "Willunga Hill",
+        "Pages Flat",
+        "The Range",
+        "Montarra",
+        "Willunga",
+        "Dingabledinga",
+        "Willunga South",
+        "Whites Valley"
+      ],
+      "km_from_gpo_min": 34.0,
+      "km_from_gpo_max": 43.2,
+      "km_to_store_min": 14.9
+    },
+    "5173": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Aldinga Beach",
+        "Aldinga",
+        "Silver Sands",
+        "Port Willunga"
+      ],
+      "km_from_gpo_min": 39.1,
+      "km_from_gpo_max": 45.0,
+      "km_to_store_min": 13.7
+    },
+    "5174": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Sellicks Hill",
+        "Sellicks Beach"
+      ],
+      "km_from_gpo_min": 46.0,
+      "km_from_gpo_max": 47.7,
+      "km_to_store_min": 21.1
+    },
+    "5201": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Paris Creek",
+        "Prospect Hill",
+        "Meadows",
+        "Blackfellows Creek",
+        "Kuitpo"
+      ],
+      "km_from_gpo_min": 31.6,
+      "km_from_gpo_max": 35.9,
+      "km_to_store_min": 18.6
+    },
+    "5202": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Hindmarsh Tiers",
+        "Myponga Beach",
+        "Myponga"
+      ],
+      "km_from_gpo_min": 53.2,
+      "km_from_gpo_max": 54.1,
+      "km_to_store_min": 27.5
+    },
+    "5203": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Wattle Flat",
+        "Bald Hills",
+        "Parawa",
+        "Yankalilla",
+        "Tunkalilla",
+        "Torrens Vale"
+      ],
+      "km_from_gpo_min": 58.7,
+      "km_from_gpo_max": 73.6,
+      "km_to_store_min": 33.2
+    },
+    "5204": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Carrickalinga",
+        "Cape Jervis",
+        "Rapid Bay",
+        "Hay Flat",
+        "Deep Creek",
+        "Normanville",
+        "Delamere",
+        "Silverton",
+        "Second Valley",
+        "Wirrina Cove"
+      ],
+      "km_from_gpo_min": 60.9,
+      "km_from_gpo_max": 87.5,
+      "km_to_store_min": 35.2
+    },
+    "5210": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Nangkita",
+        "Mount Compass",
+        "Mount Magnificent"
+      ],
+      "km_from_gpo_min": 46.5,
+      "km_from_gpo_max": 47.0,
+      "km_to_store_min": 26.0
+    },
+    "5211": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Waitpinga",
+        "Mount Jagged",
+        "Willow Creek",
+        "Inman Valley",
+        "Lower Inman Valley",
+        "Chiton",
+        "Victor Harbor Central",
+        "Hayborough",
+        "Victor Harbor",
+        "Mccracken",
+        "Yilki",
+        "Encounter Bay",
+        "Hindmarsh Valley",
+        "Back Valley"
+      ],
+      "km_from_gpo_min": 64.2,
+      "km_from_gpo_max": 74.6,
+      "km_to_store_min": 39.4
+    },
+    "5212": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Port Elliot"
+      ],
+      "km_from_gpo_min": 67.3,
+      "km_from_gpo_max": 67.3,
+      "km_to_store_min": 46.8
+    },
+    "5213": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Middleton"
+      ],
+      "km_from_gpo_min": 65.4,
+      "km_from_gpo_max": 65.4,
+      "km_to_store_min": 45.7
+    },
+    "5214": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Goolwa North",
+        "Currency Creek",
+        "Goolwa South",
+        "Goolwa Beach",
+        "Goolwa",
+        "Hindmarsh Island",
+        "Mundoo Island",
+        "Mosquito Hill"
+      ],
+      "km_from_gpo_min": 56.1,
+      "km_from_gpo_max": 74.8,
+      "km_to_store_min": 36.7
+    },
+    "5220": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Parndana"
+      ],
+      "km_from_gpo_min": 154.6,
+      "km_from_gpo_max": 154.6,
+      "km_to_store_min": 132.5
+    },
+    "5221": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "American River",
+        "Ballast Head",
+        "Muston"
+      ],
+      "km_from_gpo_min": 119.0,
+      "km_from_gpo_max": 122.5,
+      "km_to_store_min": 94.5
+    },
+    "5222": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Cuttlefish Bay",
+        "Island Beach",
+        "Penneshaw",
+        "Baudin Beach",
+        "Willoughby",
+        "Dudley West",
+        "Kangaroo Head",
+        "Brown Beach",
+        "Porky Flat",
+        "Pelican Lagoon",
+        "American Beach",
+        "Sapphiretown",
+        "Willson River",
+        "Browns Beach",
+        "Dudley East",
+        "Antechamber Bay",
+        "Hungerford",
+        "Ironstone"
+      ],
+      "km_from_gpo_min": 104.4,
+      "km_from_gpo_max": 121.5,
+      "km_to_store_min": 78.9
+    },
+    "5223": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Seal Bay",
+        "Haines",
+        "Brownlow Ki",
+        "Brownlow",
+        "Kohinoor",
+        "Karatta",
+        "Menzies",
+        "Stokes Bay",
+        "North Cape",
+        "D'Estrees Bay",
+        "D\u2019Estrees Bay",
+        "De Mole River",
+        "Harriet River",
+        "Middle River",
+        "Stun\u2019Sail Boom",
+        "Nepean Bay",
+        "Cape Borda",
+        "Western River",
+        "Duncan",
+        "Bay Of Shoals",
+        "Stun'Sail Boom",
+        "Cassini",
+        "Macgillivray",
+        "Flinders Chase",
+        "Wisanger",
+        "Emu Bay",
+        "Vivonne Bay",
+        "Kingscote",
+        "Newland",
+        "Seddon",
+        "Cygnet River",
+        "Birchmore",
+        "Gosse"
+      ],
+      "km_from_gpo_min": 97.6,
+      "km_from_gpo_max": 202.5,
+      "km_to_store_min": 61.7
+    },
+    "5231": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Kersbrook",
+        "Chain Of Ponds",
+        "Millbrook"
+      ],
+      "km_from_gpo_min": 24.3,
+      "km_from_gpo_max": 28.0,
+      "km_to_store_min": 13.4
+    },
+    "5232": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Cudlee Creek"
+      ],
+      "km_from_gpo_min": 23.0,
+      "km_from_gpo_max": 23.0,
+      "km_to_store_min": 12.9
+    },
+    "5233": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Kenton Valley",
+        "Gumeracha",
+        "Warren",
+        "Forreston"
+      ],
+      "km_from_gpo_min": 28.4,
+      "km_from_gpo_max": 33.3,
+      "km_to_store_min": 18.1
+    },
+    "5234": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Birdwood"
+      ],
+      "km_from_gpo_min": 35.4,
+      "km_from_gpo_max": 35.4,
+      "km_to_store_min": 25.4
+    },
+    "5235": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Cromer",
+        "Mount Pleasant",
+        "Flaxman Valley",
+        "Taunton",
+        "Springton",
+        "Eden Valley"
+      ],
+      "km_from_gpo_min": 40.1,
+      "km_from_gpo_max": 55.1,
+      "km_to_store_min": 26.8
+    },
+    "5236": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Tungkillo"
+      ],
+      "km_from_gpo_min": 44.3,
+      "km_from_gpo_max": 44.3,
+      "km_to_store_min": 34.7
+    },
+    "5237": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Milendella",
+        "Palmer",
+        "Apamurra",
+        "Sanderston"
+      ],
+      "km_from_gpo_min": 52.4,
+      "km_from_gpo_max": 59.9,
+      "km_to_store_min": 32.0
+    },
+    "5238": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Bonython",
+        "Forster",
+        "Woodlane",
+        "Pellaring Flat",
+        "Younghusband",
+        "Purnong Landing",
+        "Wall",
+        "Bowhill",
+        "Frahns",
+        "Younghusband Holdings",
+        "Cowirra",
+        "Teal Flat",
+        "Claypans",
+        "Lake Carlet",
+        "Coolcha",
+        "Rocky Point",
+        "Old Teal Flat",
+        "Purnong",
+        "Five Miles",
+        "Mannum",
+        "Walker Flat",
+        "Punthari",
+        "Julanka Holdings",
+        "Ponde",
+        "Bolto",
+        "Caurnamont",
+        "Big Bend",
+        "Port Mannum",
+        "Wongulla",
+        "Angas Valley",
+        "Nildottie",
+        "Frayville",
+        "Pompoota"
+      ],
+      "km_from_gpo_min": 56.5,
+      "km_from_gpo_max": 102.2,
+      "km_to_store_min": 16.7
+    },
+    "5240": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Lenswood"
+      ],
+      "km_from_gpo_min": 21.2,
+      "km_from_gpo_max": 21.2,
+      "km_to_store_min": 16.4
+    },
+    "5241": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Lobethal"
+      ],
+      "km_from_gpo_min": 25.1,
+      "km_from_gpo_max": 25.1,
+      "km_to_store_min": 18.9
+    },
+    "5242": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Balhannah"
+      ],
+      "km_from_gpo_min": 21.6,
+      "km_from_gpo_max": 21.6,
+      "km_to_store_min": 19.3
+    },
+    "5243": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Oakbank"
+      ],
+      "km_from_gpo_min": 23.1,
+      "km_from_gpo_max": 23.1,
+      "km_to_store_min": 20.3
+    },
+    "5244": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Inverbrackie",
+        "Charleston",
+        "Harrogate",
+        "Woodside",
+        "Mount Torrens"
+      ],
+      "km_from_gpo_min": 25.5,
+      "km_from_gpo_max": 38.0,
+      "km_to_store_min": 21.6
+    },
+    "5245": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Paechtown",
+        "Verdun",
+        "Hahndorf"
+      ],
+      "km_from_gpo_min": 18.4,
+      "km_from_gpo_max": 23.2,
+      "km_to_store_min": 17.0
+    },
+    "5250": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Littlehampton",
+        "Totness",
+        "Blakiston"
+      ],
+      "km_from_gpo_min": 25.5,
+      "km_from_gpo_max": 28.5,
+      "km_to_store_min": 24.3
+    },
+    "5251": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Mount Barker Junction",
+        "Wistow",
+        "Mount Barker Summit",
+        "Bugle Ranges",
+        "Mount Barker Springs",
+        "Mount Barker"
+      ],
+      "km_from_gpo_min": 26.7,
+      "km_from_gpo_max": 35.3,
+      "km_to_store_min": 24.7
+    },
+    "5252": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Petwood",
+        "Hay Valley",
+        "St Ives",
+        "Brukunga",
+        "Nairne",
+        "Dawesley",
+        "Kanmantoo"
+      ],
+      "km_from_gpo_min": 30.7,
+      "km_from_gpo_max": 40.7,
+      "km_to_store_min": 22.4
+    },
+    "5253": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Avoca Dell",
+        "Mobilong",
+        "Riverglades",
+        "Swanport",
+        "Murray Bridge South",
+        "White Hill",
+        "Murray Bridge East",
+        "Toora",
+        "Burdett",
+        "Woods Point",
+        "Murrawong",
+        "Murray Bridge",
+        "Willow Banks",
+        "Murray Bridge North",
+        "Sunnyside",
+        "Riverglen",
+        "White Sands",
+        "Northern Heights",
+        "Rocky Gully",
+        "Monteith",
+        "Long Flat",
+        "Greenbanks",
+        "Chapman Bore",
+        "Gifford Hill",
+        "Brinkley",
+        "Ettrick"
+      ],
+      "km_from_gpo_min": 61.4,
+      "km_from_gpo_max": 89.4,
+      "km_to_store_min": 2.6
+    },
+    "5254": {
+      "action": "deny",
+      "reason": "categorical_deny",
+      "localities": [
+        "Callington",
+        "Tepko",
+        "Mypolonga",
+        "Buccleuch",
+        "Monteith",
+        "Woodlane",
+        "Murray Bridge",
+        "Rockleigh",
+        "Zadows Landing",
+        "Rocky Gully",
+        "White Hill",
+        "Pallamana",
+        "Monarto",
+        "Caloote",
+        "Monarto South",
+        "Petwood",
+        "The Point",
+        "Wall Flat"
+      ],
+      "km_from_gpo_min": 35.6,
+      "km_from_gpo_max": 124.7,
+      "km_to_store_min": 2.6
+    },
+    "5255": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Belvidere",
+        "Finniss",
+        "Woodchester",
+        "Gemmells",
+        "Bletchley",
+        "Hartley",
+        "Sandergrove",
+        "Langhorne Creek",
+        "Highland Valley",
+        "Angas Plains",
+        "Strathalbyn",
+        "Lake Plains",
+        "Mulgundawa",
+        "Red Creek",
+        "Tooperang",
+        "Nalpa",
+        "Mount Observation",
+        "Salem",
+        "Willyaroo"
+      ],
+      "km_from_gpo_min": 38.7,
+      "km_from_gpo_max": 81.3,
+      "km_to_store_min": 20.3
+    },
+    "5256": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Clayton Bay",
+        "Point Sturt",
+        "Milang",
+        "Clayton",
+        "Nurragi",
+        "Tolderol"
+      ],
+      "km_from_gpo_min": 54.8,
+      "km_from_gpo_max": 68.9,
+      "km_to_store_min": 39.5
+    },
+    "5259": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Ashville",
+        "Naturi",
+        "Malinong",
+        "Poltalloch",
+        "Jervois",
+        "Lake Albert",
+        "Lake Alexandrina",
+        "East Wellington",
+        "Narrung",
+        "Point Mcleay",
+        "Raukkan",
+        "Wellington",
+        "Kepa",
+        "Wellington East",
+        "Tailem Bend"
+      ],
+      "km_from_gpo_min": 63.4,
+      "km_from_gpo_max": 105.8,
+      "km_to_store_min": 19.5
+    },
+    "5260": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Elwomple",
+        "Bayah",
+        "Tailem Bend"
+      ],
+      "km_from_gpo_min": 85.7,
+      "km_from_gpo_max": 159.6,
+      "km_to_store_min": 23.2
+    },
+    "5261": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Culburra",
+        "Coomandook",
+        "Yumali",
+        "Cooke Plains",
+        "Ki Ki"
+      ],
+      "km_from_gpo_min": 100.7,
+      "km_from_gpo_max": 158.0,
+      "km_to_store_min": 39.8
+    },
+    "5262": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Kybybolite",
+        "Binnum",
+        "Hynam",
+        "Frances"
+      ],
+      "km_from_gpo_min": 291.6,
+      "km_from_gpo_max": 302.5,
+      "km_to_store_min": 234.7
+    },
+    "5263": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Coonawarra"
+      ],
+      "km_from_gpo_min": 330.5,
+      "km_from_gpo_max": 330.5,
+      "km_to_store_min": 279.2
+    },
+    "5264": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Policeman Point",
+        "Waltowa",
+        "Meningie",
+        "Coorong",
+        "Meningie West",
+        "Salt Creek",
+        "Meningie East"
+      ],
+      "km_from_gpo_min": 107.7,
+      "km_from_gpo_max": 166.8,
+      "km_to_store_min": 57.4
+    },
+    "5265": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Coonalpyn",
+        "Field"
+      ],
+      "km_from_gpo_min": 138.5,
+      "km_from_gpo_max": 142.3,
+      "km_to_store_min": 83.6
+    },
+    "5266": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Bunbury",
+        "Colebatch",
+        "Tintinara",
+        "Deepwater"
+      ],
+      "km_from_gpo_min": 153.6,
+      "km_from_gpo_max": 186.0,
+      "km_to_store_min": 101.9
+    },
+    "5267": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Coombe",
+        "Mount Charles",
+        "Laffer",
+        "Mccallum",
+        "Sherwood",
+        "Shaugh",
+        "Brimbago",
+        "Willalooka",
+        "Wirrega",
+        "Makin",
+        "Keith",
+        "Petherick"
+      ],
+      "km_from_gpo_min": 186.3,
+      "km_from_gpo_max": 233.3,
+      "km_to_store_min": 127.6
+    },
+    "5268": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Bangham",
+        "Cangara",
+        "Senior",
+        "Pooginagoric",
+        "Bordertown South",
+        "Western Flat",
+        "Bordertown",
+        "Lowan Vale",
+        "Cannawigara"
+      ],
+      "km_from_gpo_min": 233.2,
+      "km_from_gpo_max": 275.8,
+      "km_to_store_min": 173.5
+    },
+    "5269": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Pine Hill",
+        "Wolseley",
+        "Custon",
+        "Custon"
+      ],
+      "km_from_gpo_min": 262.2,
+      "km_from_gpo_max": 269.0,
+      "km_to_store_min": 202.8
+    },
+    "5270": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Mundulla",
+        "Mundulla West",
+        "Swede Flat",
+        "Buckingham",
+        "Carew",
+        "Kongal"
+      ],
+      "km_from_gpo_min": 233.4,
+      "km_from_gpo_max": 247.6,
+      "km_to_store_min": 177.3
+    },
+    "5271": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Keppoch",
+        "Joanna",
+        "Wild Dog Valley",
+        "Moyhall",
+        "Marcollat",
+        "Stewart Range",
+        "Spence",
+        "Wrattonbully",
+        "The Gap",
+        "Cadgee",
+        "Mount Light",
+        "Laurie Park",
+        "Padthaway",
+        "Koppamurra",
+        "Lochaber",
+        "Bool Lagoon",
+        "Naracoorte",
+        "Struan"
+      ],
+      "km_from_gpo_min": 252.5,
+      "km_from_gpo_max": 325.1,
+      "km_to_store_min": 198.2
+    },
+    "5272": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Woolumbool",
+        "Conmurra",
+        "Lucindale",
+        "Coles",
+        "Fox",
+        "Greenways"
+      ],
+      "km_from_gpo_min": 258.8,
+      "km_from_gpo_max": 301.5,
+      "km_to_store_min": 208.2
+    },
+    "5273": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Avenue Range"
+      ],
+      "km_from_gpo_min": 270.1,
+      "km_from_gpo_max": 270.1,
+      "km_to_store_min": 222.6
+    },
+    "5275": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Wangolina",
+        "Mount Benson",
+        "Kingston Se",
+        "Keilira",
+        "Reedy Creek",
+        "Boatswain Point",
+        "Tilley Swamp",
+        "Taratap",
+        "Cape Jaffa",
+        "Pinks Beach",
+        "Rosetown",
+        "Blackford",
+        "Sandy Grove",
+        "Wyomi",
+        "West Range"
+      ],
+      "km_from_gpo_min": 229.7,
+      "km_from_gpo_max": 262.1,
+      "km_to_store_min": 185.4
+    },
+    "5276": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Robe",
+        "Bray",
+        "Nora Creina"
+      ],
+      "km_from_gpo_min": 269.5,
+      "km_from_gpo_max": 289.3,
+      "km_to_store_min": 230.8
+    },
+    "5277": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Comaum",
+        "Pleasant Park",
+        "Tarpeena",
+        "Maaoupe",
+        "Penola",
+        "Monbulla",
+        "Nangwarry",
+        "Glenroy"
+      ],
+      "km_from_gpo_min": 322.7,
+      "km_from_gpo_max": 358.9,
+      "km_to_store_min": 272.6
+    },
+    "5278": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Kalangadoo",
+        "Krongart",
+        "Wepar",
+        "Moerlong"
+      ],
+      "km_from_gpo_min": 348.3,
+      "km_from_gpo_max": 352.8,
+      "km_to_store_min": 300.3
+    },
+    "5279": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Trihi",
+        "Koorine",
+        "Mount Mcintyre",
+        "Short",
+        "Mount Burr",
+        "Wattle Range East"
+      ],
+      "km_from_gpo_min": 330.7,
+      "km_from_gpo_max": 349.6,
+      "km_to_store_min": 281.8
+    },
+    "5280": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Clay Wells",
+        "German Creek",
+        "Magarey",
+        "Rocky Camp",
+        "Tantanoola",
+        "Beachport",
+        "Wattle Range",
+        "Sebastopol",
+        "Canunda",
+        "Furner",
+        "German Flat",
+        "Southend",
+        "Kangaroo Inn",
+        "Hatherleigh",
+        "Rendelsham",
+        "German Creek",
+        "Thornlea",
+        "Millicent"
+      ],
+      "km_from_gpo_min": 305.0,
+      "km_from_gpo_max": 362.8,
+      "km_to_store_min": 260.6
+    },
+    "5290": {
+      "action": "allow",
+      "reason": "user_override_town",
+      "localities": [
+        "Mount Gambier",
+        "Mount Gambier Dc"
+      ],
+      "km_from_gpo_min": 377.1,
+      "km_from_gpo_max": 377.1,
+      "km_to_store_min": 330.1
+    },
+    "5291": {
+      "action": "allow",
+      "reason": "user_override_town",
+      "localities": [
+        "Cape Douglas",
+        "Mount Gambier West",
+        "Canunda",
+        "Allendale East",
+        "Mingbool",
+        "O B Flat",
+        "Ob Flat",
+        "Wye",
+        "Caroline",
+        "Nene Valley",
+        "Carpenter Rocks",
+        "Burrungule",
+        "Eight Mile Creek",
+        "Glenburnie",
+        "Wandilo",
+        "Blackfellows Caves",
+        "Square Mile",
+        "Pelican Point",
+        "Dismal Swamp",
+        "Worrolong",
+        "Mount Gambier East",
+        "Suttontown",
+        "Yahl",
+        "Moorak",
+        "Mil Lel",
+        "Mount Gambier",
+        "Mil-Lel",
+        "Donovans",
+        "Glencoe",
+        "Glencoe West",
+        "Compton",
+        "Mount Schank",
+        "Port Macdonnell",
+        "Caveton",
+        "Racecourse Bay",
+        "German Creek",
+        "Kongorong"
+      ],
+      "km_from_gpo_min": 352.5,
+      "km_from_gpo_max": 402.3,
+      "km_to_store_min": 306.3
+    },
+    "5301": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Carcuma",
+        "Geranium",
+        "Netherton",
+        "Jabuk",
+        "Wilkawatt",
+        "Parrakie",
+        "Moorlands",
+        "Peake",
+        "Sherlock"
+      ],
+      "km_from_gpo_min": 103.2,
+      "km_from_gpo_max": 167.2,
+      "km_to_store_min": 40.2
+    },
+    "5302": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Lameroo",
+        "Smithville",
+        "Ngarkat"
+      ],
+      "km_from_gpo_min": 164.1,
+      "km_from_gpo_max": 179.8,
+      "km_to_store_min": 102.1
+    },
+    "5303": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Parilla"
+      ],
+      "km_from_gpo_min": 192.4,
+      "km_from_gpo_max": 192.4,
+      "km_to_store_min": 130.3
+    },
+    "5304": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Kringin",
+        "Pinnaroo",
+        "Peebinga",
+        "Karte"
+      ],
+      "km_from_gpo_min": 191.8,
+      "km_from_gpo_max": 213.5,
+      "km_to_store_min": 132.3
+    },
+    "5306": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Wynarka"
+      ],
+      "km_from_gpo_min": 105.6,
+      "km_from_gpo_max": 105.6,
+      "km_to_store_min": 44.1
+    },
+    "5307": {
+      "action": "geocode_address",
+      "reason": "spatial_vs_town_disagreement",
+      "localities": [
+        "Karte",
+        "Marama",
+        "Mootatunga",
+        "Karoonda",
+        "Lowaldie",
+        "Kulkami"
+      ],
+      "km_from_gpo_min": 119.2,
+      "km_from_gpo_max": 204.3,
+      "km_to_store_min": 58.8
+    },
+    "5308": {
+      "action": "geocode_address",
+      "reason": "spatial_vs_town_disagreement",
+      "localities": [
+        "Galga",
+        "Maggea",
+        "Copeville",
+        "Kalyan",
+        "Mantung",
+        "Perponda",
+        "Mercunda"
+      ],
+      "km_from_gpo_min": 110.6,
+      "km_from_gpo_max": 142.9,
+      "km_to_store_min": 53.8
+    },
+    "5309": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Halidon",
+        "Borrika",
+        "Sandalwood",
+        "Mindarie"
+      ],
+      "km_from_gpo_min": 132.4,
+      "km_from_gpo_max": 148.0,
+      "km_to_store_min": 74.1
+    },
+    "5310": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Caliph",
+        "Wanbi"
+      ],
+      "km_from_gpo_min": 156.4,
+      "km_from_gpo_max": 157.6,
+      "km_to_store_min": 105.5
+    },
+    "5311": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Malpas",
+        "Taplan",
+        "Woodleigh",
+        "Paruna",
+        "Taldra",
+        "Veitch",
+        "Alawoona",
+        "Billiatt",
+        "Meribah",
+        "Maggea",
+        "Bugle Hut",
+        "Schell Well",
+        "Wunkar"
+      ],
+      "km_from_gpo_min": 142.9,
+      "km_from_gpo_max": 216.7,
+      "km_to_store_min": 103.7
+    },
+    "5320": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Maude",
+        "Westons Flat",
+        "Wombats Rest",
+        "Morgan",
+        "Stuart",
+        "Beatty",
+        "Bundey",
+        "North West Bend",
+        "Morphetts Flat",
+        "Eba",
+        "Murbko",
+        "Brenda Park",
+        "Lindley",
+        "Beaumonts"
+      ],
+      "km_from_gpo_min": 127.5,
+      "km_from_gpo_max": 233.8,
+      "km_to_store_min": 90.7
+    },
+    "5321": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Cadell Lagoon",
+        "Cadell"
+      ],
+      "km_from_gpo_min": 145.5,
+      "km_from_gpo_max": 145.5,
+      "km_to_store_min": 112.0
+    },
+    "5322": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Ramco Heights",
+        "Golden Heights",
+        "Qualco",
+        "Sunlands",
+        "Ramco"
+      ],
+      "km_from_gpo_min": 145.0,
+      "km_from_gpo_max": 149.4,
+      "km_to_store_min": 115.4
+    },
+    "5330": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Stockyard Plain",
+        "Holder",
+        "Woolpunda",
+        "Devlins Pound",
+        "Holder Siding",
+        "Taylorville Station",
+        "Waikerie",
+        "Lowbank",
+        "Pooginook",
+        "Kanni",
+        "Hawks Nest Station",
+        "Overland Corner",
+        "Taylorville",
+        "Good Hope Landing",
+        "Markaranka",
+        "Boolgun",
+        "Wigley Flat"
+      ],
+      "km_from_gpo_min": 143.4,
+      "km_from_gpo_max": 181.1,
+      "km_to_store_min": 107.3
+    },
+    "5331": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Kingston On Murray",
+        "Kingston-On-Murray"
+      ],
+      "km_from_gpo_min": 177.3,
+      "km_from_gpo_max": 177.3,
+      "km_to_store_min": 141.9
+    },
+    "5332": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Moorook",
+        "Yinkanie",
+        "Moorook South",
+        "Wappilka"
+      ],
+      "km_from_gpo_min": 166.6,
+      "km_from_gpo_max": 176.8,
+      "km_to_store_min": 126.5
+    },
+    "5333": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Loxton North",
+        "Loxton",
+        "Taplan",
+        "Nangari",
+        "New Residence",
+        "Pyap West",
+        "Pyap",
+        "Noora",
+        "Pata",
+        "Bookpurnong"
+      ],
+      "km_from_gpo_min": 170.7,
+      "km_from_gpo_max": 213.7,
+      "km_to_store_min": 124.1
+    },
+    "5340": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Pike River",
+        "Murtho",
+        "Paringa",
+        "Yamba",
+        "Mundic Creek",
+        "Wonuarra"
+      ],
+      "km_from_gpo_min": 213.9,
+      "km_from_gpo_max": 226.2,
+      "km_to_store_min": 171.0
+    },
+    "5341": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Calperum",
+        "Chowilla",
+        "Cooltong",
+        "Crescent",
+        "Calperum Station",
+        "Renmark",
+        "Renmark South",
+        "Chaffey",
+        "Old Calperum",
+        "Renmark West",
+        "Renmark North",
+        "Yamba"
+      ],
+      "km_from_gpo_min": 206.2,
+      "km_from_gpo_max": 241.7,
+      "km_to_store_min": 165.7
+    },
+    "5342": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Monash"
+      ],
+      "km_from_gpo_min": 195.2,
+      "km_from_gpo_max": 195.2,
+      "km_to_store_min": 155.7
+    },
+    "5343": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Katarapko",
+        "Winkie",
+        "Lyrup",
+        "Gerard",
+        "Gurra Gurra",
+        "Berri"
+      ],
+      "km_from_gpo_min": 187.0,
+      "km_from_gpo_max": 201.7,
+      "km_to_store_min": 142.1
+    },
+    "5344": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Glossop"
+      ],
+      "km_from_gpo_min": 191.8,
+      "km_from_gpo_max": 191.8,
+      "km_to_store_min": 151.6
+    },
+    "5345": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Barmera",
+        "Loveday",
+        "Spectacle Lake"
+      ],
+      "km_from_gpo_min": 182.4,
+      "km_from_gpo_max": 186.1,
+      "km_to_store_min": 143.6
+    },
+    "5346": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Cobdogla"
+      ],
+      "km_from_gpo_min": 181.8,
+      "km_from_gpo_max": 181.8,
+      "km_to_store_min": 144.5
+    },
+    "5350": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Rosedale",
+        "Sandy Creek"
+      ],
+      "km_from_gpo_min": 47.9,
+      "km_from_gpo_max": 47.9,
+      "km_to_store_min": 10.6
+    },
+    "5351": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Mount Crawford",
+        "Altona",
+        "Barossa Goldfields",
+        "Cockatoo Valley",
+        "Williamstown",
+        "Lyndoch",
+        "Pewsey Vale"
+      ],
+      "km_from_gpo_min": 37.5,
+      "km_from_gpo_max": 47.6,
+      "km_to_store_min": 8.5
+    },
+    "5352": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Bethany",
+        "Vine Vale",
+        "Tanunda",
+        "Gomersal",
+        "Stone Well",
+        "Rowland Flat",
+        "Krondorf"
+      ],
+      "km_from_gpo_min": 49.0,
+      "km_from_gpo_max": 57.9,
+      "km_to_store_min": 13.4
+    },
+    "5353": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Black Hill",
+        "Angaston",
+        "Punyelroo",
+        "Langs Landing",
+        "Sunnydale",
+        "Sedan",
+        "Keyneton",
+        "Cambrai",
+        "Moculta",
+        "Towitta",
+        "Kongolia",
+        "Mount Mckenzie",
+        "Penrice"
+      ],
+      "km_from_gpo_min": 60.2,
+      "km_from_gpo_max": 99.6,
+      "km_to_store_min": 29.2
+    },
+    "5354": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Fisher",
+        "Bakara Well",
+        "Marks Landing",
+        "Naidia",
+        "Punyelroo",
+        "Bakara",
+        "Swan Reach"
+      ],
+      "km_from_gpo_min": 98.1,
+      "km_from_gpo_max": 120.2,
+      "km_to_store_min": 66.9
+    },
+    "5355": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Ebenezer",
+        "Stockwell",
+        "Moppa",
+        "Nuriootpa",
+        "Seppeltsfield",
+        "Marananga",
+        "Daveyston",
+        "Light Pass"
+      ],
+      "km_from_gpo_min": 55.8,
+      "km_from_gpo_max": 135.9,
+      "km_to_store_min": 18.6
+    },
+    "5356": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Sandleton",
+        "Truro",
+        "Steinfeld",
+        "Dutton East",
+        "Dutton",
+        "St Kitts",
+        "Annadale"
+      ],
+      "km_from_gpo_min": 75.3,
+      "km_from_gpo_max": 90.8,
+      "km_to_store_min": 40.5
+    },
+    "5357": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "New Well",
+        "Wigley Flat",
+        "Notts Well",
+        "Moorundie",
+        "Paisley",
+        "Blanchetown",
+        "Mcbean Pound"
+      ],
+      "km_from_gpo_min": 107.9,
+      "km_from_gpo_max": 169.1,
+      "km_to_store_min": 80.1
+    },
+    "5360": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Greenock",
+        "Nain"
+      ],
+      "km_from_gpo_min": 60.4,
+      "km_from_gpo_max": 60.8,
+      "km_to_store_min": 22.6
+    },
+    "5371": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Templers",
+        "Shea-Oak Log",
+        "Morn Hill",
+        "Roseworthy"
+      ],
+      "km_from_gpo_min": 46.0,
+      "km_from_gpo_max": 59.5,
+      "km_to_store_min": 7.1
+    },
+    "5372": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Freeling"
+      ],
+      "km_from_gpo_min": 56.1,
+      "km_from_gpo_max": 56.1,
+      "km_to_store_min": 16.9
+    },
+    "5373": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Hamilton",
+        "Koonunga",
+        "Allendale North",
+        "Fords",
+        "Bethel",
+        "St Johns",
+        "Kapunda",
+        "Bagot Well"
+      ],
+      "km_from_gpo_min": 65.4,
+      "km_from_gpo_max": 82.8,
+      "km_to_store_min": 26.3
+    },
+    "5374": {
+      "action": "geocode_address",
+      "reason": "spatial_vs_town_disagreement",
+      "localities": [
+        "Ngapala",
+        "Neales Flat",
+        "Peep Hill",
+        "Brownlow",
+        "Frankton",
+        "Hampden",
+        "Eudunda",
+        "Australia Plains",
+        "Hansborough",
+        "Julia",
+        "Mount Mary",
+        "Point Pass",
+        "Buchanan",
+        "Bower",
+        "Sutherlands"
+      ],
+      "km_from_gpo_min": 87.2,
+      "km_from_gpo_max": 119.6,
+      "km_to_store_min": 49.2
+    },
+    "5381": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Bright",
+        "Hallelujah Hills",
+        "Robertstown",
+        "Emu Downs",
+        "Worlds End Creek",
+        "Worlds End",
+        "Rocky Plain",
+        "Halleluja Hills",
+        "Brady Creek",
+        "Geranium Plains"
+      ],
+      "km_from_gpo_min": 111.8,
+      "km_from_gpo_max": 128.9,
+      "km_to_store_min": 72.6
+    },
+    "5400": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Woolsheds",
+        "Pinkerton Plains",
+        "Wasleys",
+        "Magdala"
+      ],
+      "km_from_gpo_min": 49.3,
+      "km_from_gpo_max": 58.3,
+      "km_to_store_min": 15.4
+    },
+    "5401": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Hamley Bridge",
+        "Alma",
+        "Salter Springs"
+      ],
+      "km_from_gpo_min": 63.9,
+      "km_from_gpo_max": 82.8,
+      "km_to_store_min": 27.5
+    },
+    "5410": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Linwood",
+        "Stockport"
+      ],
+      "km_from_gpo_min": 65.0,
+      "km_from_gpo_max": 67.2,
+      "km_to_store_min": 26.5
+    },
+    "5411": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Tarlee",
+        "Giles Corner"
+      ],
+      "km_from_gpo_min": 74.7,
+      "km_from_gpo_max": 79.3,
+      "km_to_store_min": 36.3
+    },
+    "5412": {
+      "action": "geocode_address",
+      "reason": "spatial_vs_town_disagreement",
+      "localities": [
+        "Riverton",
+        "Navan",
+        "Woolshed Flat",
+        "Rhynie"
+      ],
+      "km_from_gpo_min": 87.1,
+      "km_from_gpo_max": 87.2,
+      "km_to_store_min": 49.2
+    },
+    "5413": {
+      "action": "geocode_address",
+      "reason": "spatial_vs_town_disagreement",
+      "localities": [
+        "Tothill Creek",
+        "Marrabel",
+        "Waterloo",
+        "Apoinga",
+        "Saddleworth",
+        "Black Springs",
+        "Tarnma",
+        "Steelton",
+        "Tothill Belt"
+      ],
+      "km_from_gpo_min": 90.0,
+      "km_from_gpo_max": 117.6,
+      "km_to_store_min": 51.0
+    },
+    "5414": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Manoora"
+      ],
+      "km_from_gpo_min": 105.2,
+      "km_from_gpo_max": 105.2,
+      "km_to_store_min": 66.8
+    },
+    "5415": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Stanley",
+        "Mintaro"
+      ],
+      "km_from_gpo_min": 113.0,
+      "km_from_gpo_max": 127.0,
+      "km_to_store_min": 75.7
+    },
+    "5416": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Farrell Flat",
+        "Porter Lagoon"
+      ],
+      "km_from_gpo_min": 125.6,
+      "km_from_gpo_max": 125.6,
+      "km_to_store_min": 87.0
+    },
+    "5417": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Warnes",
+        "North Booborowie",
+        "Gluepot",
+        "Koonoona",
+        "Bunyung",
+        "Old Koomooloo",
+        "Oakvale Station",
+        "Quondong",
+        "Faraway Hill",
+        "Hanson",
+        "Parcoola",
+        "Pine Valley Station",
+        "Sturt Vale",
+        "Danggali",
+        "Balah",
+        "Burra",
+        "Canegrass",
+        "Baldina",
+        "Gum Creek",
+        "Burra Eastern Districts",
+        "Booborowie",
+        "Leighton",
+        "Mongolata"
+      ],
+      "km_from_gpo_min": 142.8,
+      "km_from_gpo_max": 158.3,
+      "km_to_store_min": 104.3
+    },
+    "5418": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Mount Bryan",
+        "Collinsville"
+      ],
+      "km_from_gpo_min": 155.7,
+      "km_from_gpo_max": 184.5,
+      "km_to_store_min": 117.3
+    },
+    "5419": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Mount Bryan East",
+        "Pine Creek",
+        "Wonna",
+        "Hallett",
+        "Ulooloo",
+        "Canowie",
+        "Willalo"
+      ],
+      "km_from_gpo_min": 166.5,
+      "km_from_gpo_max": 173.8,
+      "km_to_store_min": 128.9
+    },
+    "5420": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Canowie Belt",
+        "Whyte Yarcowie"
+      ],
+      "km_from_gpo_min": 194.7,
+      "km_from_gpo_max": 194.7,
+      "km_to_store_min": 157.4
+    },
+    "5421": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Terowie",
+        "Franklyn"
+      ],
+      "km_from_gpo_min": 197.9,
+      "km_from_gpo_max": 204.1,
+      "km_to_store_min": 159.7
+    },
+    "5422": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Peterborough",
+        "Cavenagh",
+        "Oodla Wirra",
+        "Waroonee",
+        "Mannanarie",
+        "Dawson",
+        "Hardy",
+        "Paratoo",
+        "Minvalara",
+        "Sunnybrae",
+        "Parnaroo",
+        "Yatina",
+        "Ucolta",
+        "Erskine"
+      ],
+      "km_from_gpo_min": 209.5,
+      "km_from_gpo_max": 253.5,
+      "km_to_store_min": 173.2
+    },
+    "5431": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Yalpara",
+        "Pekina",
+        "Eurelia",
+        "Orroroo",
+        "Willowie",
+        "Minburra",
+        "Johnburgh",
+        "Tarcowie",
+        "Coomooroo",
+        "Amyton",
+        "Black Rock",
+        "Minburra Plain",
+        "Wallaway",
+        "North Hills",
+        "Morchard",
+        "Hammond",
+        "Walloway",
+        "Minburra Station",
+        "Johnburg"
+      ],
+      "km_from_gpo_min": 220.2,
+      "km_from_gpo_max": 275.8,
+      "km_to_store_min": 184.5
+    },
+    "5432": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Wilcowie",
+        "Holowiliena",
+        "Belton",
+        "Moockra",
+        "Bibliando",
+        "Willippa",
+        "Holowiliena South",
+        "Yanyarrie",
+        "Baratta",
+        "Witchitie",
+        "Carrieton",
+        "Three Creeks",
+        "Cradock"
+      ],
+      "km_from_gpo_min": 274.2,
+      "km_from_gpo_max": 316.5,
+      "km_to_store_min": 238.8
+    },
+    "5433": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Saltia",
+        "Stephenston",
+        "Yarrah",
+        "Willochra",
+        "Bruce",
+        "Quorn"
+      ],
+      "km_from_gpo_min": 276.3,
+      "km_from_gpo_max": 302.8,
+      "km_to_store_min": 242.4
+    },
+    "5434": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Flinders Ranges",
+        "Kanyaka",
+        "Shaggy Ridge",
+        "Prelinna",
+        "Mount Havelock",
+        "Black Hill Station",
+        "Worumba",
+        "Hawker",
+        "Willow Springs",
+        "Upalinna",
+        "Barndioota"
+      ],
+      "km_from_gpo_min": 338.5,
+      "km_from_gpo_max": 348.7,
+      "km_to_store_min": 302.8
+    },
+    "5440": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Nackara",
+        "Koonamore",
+        "Lake Frome",
+        "Cockburn",
+        "Martins Well",
+        "Melton Station",
+        "Mooleulooloo",
+        "Mount Victor Station",
+        "Mutooroo",
+        "Pine Creek Station",
+        "Mundi Mundi",
+        "Weekeroo",
+        "Waukaringa",
+        "Mingary",
+        "Olary",
+        "Bindarrah",
+        "Yunta",
+        "Netley Gap",
+        "Bimbowrie",
+        "Boolcoomatta",
+        "Bulloo Creek",
+        "Curnamona",
+        "Devonborough Downs",
+        "Billeroo West",
+        "Benda",
+        "Tikalina",
+        "Abminga Station",
+        "Tepco Station",
+        "Quinyambie",
+        "Pualco Range",
+        "Erudina",
+        "Florina Station",
+        "Frome Downs",
+        "Plumbago",
+        "Grampus",
+        "Oulnina Park",
+        "Oulnina",
+        "Kalabity",
+        "Kalkaroo",
+        "Wiawera",
+        "Wompinie",
+        "Outalpa",
+        "Winnininnie",
+        "Yarramba",
+        "Manunda Station",
+        "Manna Hill",
+        "Mulyungarie",
+        "Wadnaminga"
+      ],
+      "km_from_gpo_min": 243.8,
+      "km_from_gpo_max": 386.9,
+      "km_to_store_min": 204.9
+    },
+    "5451": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Auburn",
+        "Undalya"
+      ],
+      "km_from_gpo_min": 96.1,
+      "km_from_gpo_max": 100.6,
+      "km_to_store_min": 59.4
+    },
+    "5452": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Leasingham",
+        "Watervale"
+      ],
+      "km_from_gpo_min": 105.3,
+      "km_from_gpo_max": 107.9,
+      "km_to_store_min": 69.1
+    },
+    "5453": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Penwortham",
+        "Gillentown",
+        "Spring Gully",
+        "Polish Hill River",
+        "Spring Farm",
+        "Kybunga",
+        "Sevenhill",
+        "Emu Flat",
+        "Boconnoc Park",
+        "Benbournie",
+        "Clare",
+        "Barinia",
+        "Armagh",
+        "Hoyleton",
+        "Stanley Flat",
+        "Hill River"
+      ],
+      "km_from_gpo_min": 99.7,
+      "km_from_gpo_max": 129.1,
+      "km_to_store_min": 65.4
+    },
+    "5454": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Euromina",
+        "Mayfield",
+        "Washpool",
+        "Hacklins Corner",
+        "Andrews",
+        "Broughton River Valley",
+        "Spalding"
+      ],
+      "km_from_gpo_min": 143.3,
+      "km_from_gpo_max": 166.4,
+      "km_to_store_min": 107.3
+    },
+    "5455": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Hilltown"
+      ],
+      "km_from_gpo_min": 123.2,
+      "km_from_gpo_max": 123.2,
+      "km_to_store_min": 87.3
+    },
+    "5460": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Pinery",
+        "Owen",
+        "Stockyard Creek",
+        "Barabba"
+      ],
+      "km_from_gpo_min": 64.9,
+      "km_from_gpo_max": 73.2,
+      "km_to_store_min": 31.7
+    },
+    "5461": {
+      "action": "geocode_address",
+      "reason": "spatial_vs_town_disagreement",
+      "localities": [
+        "Hoskin Corner",
+        "Dalkey",
+        "Balaklava",
+        "Erith",
+        "Everard Central",
+        "Goyder",
+        "Mount Templeton",
+        "Stow",
+        "Watchman",
+        "Saints",
+        "Bowillia",
+        "Halbury",
+        "Whitwarta"
+      ],
+      "km_from_gpo_min": 79.4,
+      "km_from_gpo_max": 119.7,
+      "km_to_store_min": 51.6
+    },
+    "5462": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Blyth"
+      ],
+      "km_from_gpo_min": 120.5,
+      "km_from_gpo_max": 120.5,
+      "km_to_store_min": 86.7
+    },
+    "5464": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Bungaree",
+        "Koolunga",
+        "Brinkworth",
+        "Hart",
+        "Anama",
+        "Condowie",
+        "Rochester",
+        "Marola"
+      ],
+      "km_from_gpo_min": 131.7,
+      "km_from_gpo_max": 151.6,
+      "km_to_store_min": 96.5
+    },
+    "5470": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Yacka"
+      ],
+      "km_from_gpo_min": 151.6,
+      "km_from_gpo_max": 151.6,
+      "km_to_store_min": 117.5
+    },
+    "5471": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Gulnare"
+      ],
+      "km_from_gpo_min": 163.2,
+      "km_from_gpo_max": 163.2,
+      "km_to_store_min": 128.9
+    },
+    "5472": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Georgetown"
+      ],
+      "km_from_gpo_min": 174.7,
+      "km_from_gpo_max": 174.7,
+      "km_to_store_min": 140.6
+    },
+    "5473": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Gladstone"
+      ],
+      "km_from_gpo_min": 186.1,
+      "km_from_gpo_max": 186.1,
+      "km_to_store_min": 152.4
+    },
+    "5480": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Appila",
+        "Stone Hut",
+        "Laura"
+      ],
+      "km_from_gpo_min": 195.8,
+      "km_from_gpo_max": 209.6,
+      "km_to_store_min": 162.4
+    },
+    "5481": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Wirrabara",
+        "Murray Town",
+        "Bangor",
+        "Wongyarra"
+      ],
+      "km_from_gpo_min": 212.9,
+      "km_from_gpo_max": 224.5,
+      "km_to_store_min": 179.5
+    },
+    "5482": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Wepowie",
+        "Booleroo Centre"
+      ],
+      "km_from_gpo_min": 229.0,
+      "km_from_gpo_max": 233.2,
+      "km_to_store_min": 194.6
+    },
+    "5483": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Melrose"
+      ],
+      "km_from_gpo_min": 237.0,
+      "km_from_gpo_max": 237.0,
+      "km_to_store_min": 203.9
+    },
+    "5485": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Wilmington"
+      ],
+      "km_from_gpo_min": 257.6,
+      "km_from_gpo_max": 257.6,
+      "km_to_store_min": 224.8
+    },
+    "5490": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Caltowie North",
+        "Caltowie",
+        "Caltowie West"
+      ],
+      "km_from_gpo_min": 194.3,
+      "km_from_gpo_max": 201.0,
+      "km_to_store_min": 159.2
+    },
+    "5491": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Hornsdale",
+        "Belalie North",
+        "Bundaleer North",
+        "Jamestown",
+        "West Bundaleer",
+        "Belalie East",
+        "Bundaleer Gardens"
+      ],
+      "km_from_gpo_min": 177.8,
+      "km_from_gpo_max": 207.0,
+      "km_to_store_min": 142.2
+    },
+    "5493": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Yongala"
+      ],
+      "km_from_gpo_min": 211.5,
+      "km_from_gpo_max": 211.5,
+      "km_to_store_min": 174.3
+    },
+    "5495": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Port Germein",
+        "Baroota",
+        "Nectar Brook",
+        "Port Flinders",
+        "Germein Bay",
+        "Weeroona Island",
+        "Mambray Creek"
+      ],
+      "km_from_gpo_min": 209.7,
+      "km_from_gpo_max": 252.8,
+      "km_to_store_min": 179.0
+    },
+    "5501": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Windsor",
+        "Wild Horse Plains",
+        "Long Plains",
+        "Middle Beach",
+        "Calomba",
+        "Lower Light",
+        "Thompson Beach",
+        "Webb Beach",
+        "Lewiston",
+        "Port Gawler",
+        "Dublin",
+        "Parham",
+        "Two Wells",
+        "Avon"
+      ],
+      "km_from_gpo_min": 33.9,
+      "km_from_gpo_max": 75.7,
+      "km_to_store_min": 10.9
+    },
+    "5502": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Mallala",
+        "Reeves Plains",
+        "Grace Plains",
+        "Fischer",
+        "Korunye",
+        "Redbanks"
+      ],
+      "km_from_gpo_min": 45.8,
+      "km_from_gpo_max": 62.5,
+      "km_to_store_min": 15.9
+    },
+    "5510": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Lochiel"
+      ],
+      "km_from_gpo_min": 117.6,
+      "km_from_gpo_max": 117.6,
+      "km_to_store_min": 91.3
+    },
+    "5520": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Barunga Gap",
+        "Burnsfield",
+        "Wokurna",
+        "Gleeson Hill",
+        "Snowtown",
+        "Bumbunga"
+      ],
+      "km_from_gpo_min": 117.5,
+      "km_from_gpo_max": 164.5,
+      "km_to_store_min": 89.4
+    },
+    "5521": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Redhill"
+      ],
+      "km_from_gpo_min": 158.8,
+      "km_from_gpo_max": 158.8,
+      "km_to_store_min": 127.6
+    },
+    "5522": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Ward Hill",
+        "Port Broughton",
+        "Lower Broughton",
+        "Fisherman Bay"
+      ],
+      "km_from_gpo_min": 159.8,
+      "km_from_gpo_max": 188.4,
+      "km_to_store_min": 133.8
+    },
+    "5523": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Wandearah East",
+        "Narridy",
+        "Merriton",
+        "Nurom",
+        "Huddleston",
+        "Beetaloo Valley",
+        "Wandearah",
+        "Clements Gap",
+        "Wandearah West",
+        "Crystal Brook"
+      ],
+      "km_from_gpo_min": 164.5,
+      "km_from_gpo_max": 191.5,
+      "km_to_store_min": 136.0
+    },
+    "5540": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Warnertown",
+        "Lower Broughton",
+        "Port Pirie South",
+        "Port Davis",
+        "Napperby",
+        "Risdon Park",
+        "Port Pirie",
+        "Port Pirie West",
+        "Telowie",
+        "Risdon Park South",
+        "Bungama",
+        "Nelshaby",
+        "Pirie East",
+        "Coonamia",
+        "Solomontown"
+      ],
+      "km_from_gpo_min": 188.4,
+      "km_from_gpo_max": 214.1,
+      "km_to_store_min": 159.7
+    },
+    "5550": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Beaufort",
+        "Proof Range",
+        "Kallora",
+        "Port Wakefield",
+        "Inkerman",
+        "Nantawarra",
+        "South Hummocks",
+        "Bowmans"
+      ],
+      "km_from_gpo_min": 79.4,
+      "km_from_gpo_max": 110.9,
+      "km_to_store_min": 58.3
+    },
+    "5552": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Kainton",
+        "Thrington",
+        "Kulpara",
+        "Paskeville",
+        "Melton",
+        "Sunnyvale",
+        "Port Arthur"
+      ],
+      "km_from_gpo_min": 99.9,
+      "km_from_gpo_max": 123.9,
+      "km_to_store_min": 80.5
+    },
+    "5554": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Jerusalem",
+        "Willamulka",
+        "Thomas Plain",
+        "Cunliffe",
+        "Kadina",
+        "Thomas Plains",
+        "Matta Flat",
+        "New Town",
+        "Wallaroo Mines",
+        "Jericho",
+        "Boors Plain"
+      ],
+      "km_from_gpo_min": 123.1,
+      "km_from_gpo_max": 135.0,
+      "km_to_store_min": 103.3
+    },
+    "5555": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Hope Gap",
+        "Lake View",
+        "Tickera",
+        "Mundoora",
+        "Winulta",
+        "Kulpara",
+        "Dowlingville",
+        "Dowling",
+        "Melton",
+        "Alford",
+        "Collinsfield"
+      ],
+      "km_from_gpo_min": 91.4,
+      "km_from_gpo_max": 155.2,
+      "km_to_store_min": 78.7
+    },
+    "5556": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Wallaroo",
+        "Warburto",
+        "Wallaroo Plain",
+        "North Beach"
+      ],
+      "km_from_gpo_min": 137.1,
+      "km_from_gpo_max": 144.6,
+      "km_to_store_min": 122.8
+    },
+    "5558": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Yelta",
+        "North Moonta",
+        "Moonta Mines",
+        "North Yelta",
+        "East Moonta",
+        "Agery",
+        "Port Hughes",
+        "Nalyappa",
+        "Kooroona",
+        "Cross Roads",
+        "Moonta",
+        "Hamley",
+        "Paramatta",
+        "Moonta Bay"
+      ],
+      "km_from_gpo_min": 116.4,
+      "km_from_gpo_max": 136.1,
+      "km_to_store_min": 103.1
+    },
+    "5560": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Ninnes",
+        "Bute"
+      ],
+      "km_from_gpo_min": 119.1,
+      "km_from_gpo_max": 130.2,
+      "km_to_store_min": 96.6
+    },
+    "5570": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Winulta",
+        "Clinton Centre",
+        "Price",
+        "Clinton",
+        "Port Clinton"
+      ],
+      "km_from_gpo_min": 90.4,
+      "km_from_gpo_max": 99.5,
+      "km_to_store_min": 75.9
+    },
+    "5571": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Petersville",
+        "Cunningham",
+        "Black Point",
+        "Rogues Point",
+        "Dowlingville",
+        "Pine Point",
+        "Sandilands",
+        "James Well",
+        "Ardrossan",
+        "Tiddy Widdy Beach"
+      ],
+      "km_from_gpo_min": 74.3,
+      "km_from_gpo_max": 92.9,
+      "km_to_store_min": 62.4
+    },
+    "5572": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Arthurton",
+        "Port Arthur"
+      ],
+      "km_from_gpo_min": 99.9,
+      "km_from_gpo_max": 107.1,
+      "km_to_store_min": 80.5
+    },
+    "5573": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "South Kilkerran",
+        "Chinaman Wells",
+        "Yorke Valley",
+        "Urania",
+        "Weetulta",
+        "Port Victoria",
+        "Maitland",
+        "Chinamen Wells",
+        "Point Pearce",
+        "Wauraltee",
+        "Balgowan"
+      ],
+      "km_from_gpo_min": 98.4,
+      "km_from_gpo_max": 119.9,
+      "km_to_store_min": 86.2
+    },
+    "5575": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Minlaton",
+        "Stenhouse Bay",
+        "Brentwood",
+        "Bluff Beach",
+        "Hardwicke Bay",
+        "Point Turton",
+        "Wool Bay",
+        "Point Souttar",
+        "White Hut",
+        "Port Julia",
+        "The Pines",
+        "Marion Bay",
+        "Ramsay",
+        "Port Rickaby",
+        "Parsons Beach",
+        "Koolywurtie",
+        "Corny Point",
+        "Couch Beach"
+      ],
+      "km_from_gpo_min": 73.1,
+      "km_from_gpo_max": 156.7,
+      "km_to_store_min": 61.6
+    },
+    "5576": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Honiton",
+        "Yorketown",
+        "Port Moorowie"
+      ],
+      "km_from_gpo_min": 89.4,
+      "km_from_gpo_max": 99.8,
+      "km_to_store_min": 76.7
+    },
+    "5577": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Point Souttar",
+        "Warooka",
+        "Foul Bay",
+        "The Pines",
+        "Inneston",
+        "Couch Beach"
+      ],
+      "km_from_gpo_min": 109.5,
+      "km_from_gpo_max": 160.2,
+      "km_to_store_min": 100.2
+    },
+    "5580": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Port Julia",
+        "Curramulka"
+      ],
+      "km_from_gpo_min": 73.1,
+      "km_from_gpo_max": 86.1,
+      "km_to_store_min": 61.6
+    },
+    "5581": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Port Vincent",
+        "Sheaoak Flat"
+      ],
+      "km_from_gpo_min": 69.6,
+      "km_from_gpo_max": 70.8,
+      "km_to_store_min": 59.4
+    },
+    "5582": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Stansbury",
+        "Port Giles"
+      ],
+      "km_from_gpo_min": 73.1,
+      "km_from_gpo_max": 73.1,
+      "km_to_store_min": 64.9
+    },
+    "5583": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Coobowie",
+        "Sultana Point",
+        "Edithburgh"
+      ],
+      "km_from_gpo_min": 79.8,
+      "km_from_gpo_max": 80.2,
+      "km_to_store_min": 66.8
+    },
+    "5600": {
+      "action": "allow",
+      "reason": "user_override_town",
+      "localities": [
+        "Whyalla Dc",
+        "Iron Baron",
+        "Whyalla",
+        "Whyalla Playford"
+      ],
+      "km_from_gpo_min": 231.4,
+      "km_from_gpo_max": 252.3,
+      "km_to_store_min": 205.6
+    },
+    "5601": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Douglas Point South",
+        "False Bay",
+        "Douglas Point",
+        "Point Lowly",
+        "Iron Knob",
+        "Port Bonython",
+        "Whyalla Barson",
+        "Backy Point",
+        "Point Lowly North",
+        "Fitzgerald Bay"
+      ],
+      "km_from_gpo_min": 227.5,
+      "km_from_gpo_max": 278.4,
+      "km_to_store_min": 199.0
+    },
+    "5602": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Miltalie",
+        "Mitchellville",
+        "Lucky Bay",
+        "Mangalo",
+        "Cowell",
+        "Midgee",
+        "Minbrie",
+        "Mitalie",
+        "Port Gibbon"
+      ],
+      "km_from_gpo_min": 197.1,
+      "km_from_gpo_max": 239.1,
+      "km_to_store_min": 183.1
+    },
+    "5603": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Hincks",
+        "Wharminda",
+        "Verran",
+        "Arno Bay"
+      ],
+      "km_from_gpo_min": 218.8,
+      "km_from_gpo_max": 241.6,
+      "km_to_store_min": 206.6
+    },
+    "5604": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Port Neill"
+      ],
+      "km_from_gpo_min": 225.0,
+      "km_from_gpo_max": 225.0,
+      "km_to_store_min": 213.5
+    },
+    "5605": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Butler",
+        "Tumby Bay"
+      ],
+      "km_from_gpo_min": 236.7,
+      "km_from_gpo_max": 246.2,
+      "km_to_store_min": 226.1
+    },
+    "5606": {
+      "action": "allow",
+      "reason": "user_override_town",
+      "localities": [
+        "Port Lincoln",
+        "Port Lincoln South",
+        "Wedge Island",
+        "Kirton Point"
+      ],
+      "km_from_gpo_min": 196.6,
+      "km_from_gpo_max": 249.8,
+      "km_to_store_min": 184.4
+    },
+    "5607": {
+      "action": "allow",
+      "reason": "user_override_town",
+      "localities": [
+        "Hawson",
+        "North Shields",
+        "Koppio",
+        "Uley",
+        "Coomunga",
+        "Peachna",
+        "Point Boston",
+        "Tootenilla",
+        "Tulka North",
+        "Wanilla",
+        "Coulta",
+        "Green Patch",
+        "Pearlah",
+        "Fountain",
+        "Mount Drummond",
+        "Duck Ponds",
+        "Kiana",
+        "Lipson",
+        "Tulka",
+        "Louth Bay",
+        "Charlton Gully",
+        "Murdinga",
+        "Venus Bay",
+        "Sheringa",
+        "Sullivan",
+        "Mount Hope",
+        "Whites River",
+        "Port Lincoln",
+        "Moody",
+        "Mount Dutton Bay",
+        "Brooker",
+        "Whites Flat",
+        "Warrow",
+        "Yallunda Flat",
+        "Boston",
+        "Wangary",
+        "Karkoo",
+        "Mitchell",
+        "Warunda",
+        "Little Douglas",
+        "Poonindie",
+        "Horse Peninsula",
+        "Sleaford",
+        "Farm Beach",
+        "Tooligie",
+        "Warrachie",
+        "Kellidie Bay",
+        "Coffin Bay",
+        "Tiatukia",
+        "Ungarra",
+        "Lincoln National Park"
+      ],
+      "km_from_gpo_min": 9.7,
+      "km_from_gpo_max": 407.0,
+      "km_to_store_min": 2.2
+    },
+    "5608": {
+      "action": "allow",
+      "reason": "user_override_town",
+      "localities": [
+        "Whyalla Stuart",
+        "Whyalla Norrie North",
+        "Whyalla Norrie",
+        "Whyalla Norrie East",
+        "Mullaquana"
+      ],
+      "km_from_gpo_min": 222.4,
+      "km_from_gpo_max": 233.8,
+      "km_to_store_min": 200.3
+    },
+    "5609": {
+      "action": "allow",
+      "reason": "user_override_town",
+      "localities": [
+        "Middleback Range",
+        "Whyalla Jenkins",
+        "Murninnie Beach",
+        "Cowleds Landing"
+      ],
+      "km_from_gpo_min": 234.5,
+      "km_from_gpo_max": 234.5,
+      "km_to_store_min": 209.2
+    },
+    "5611": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Cooyerdoo",
+        "Corunna Station",
+        "Secret Rocks",
+        "Iron Knob",
+        "Gilles Downs",
+        "Myola Station",
+        "Lake Gilles",
+        "Katunga Station",
+        "Iron Baron"
+      ],
+      "km_from_gpo_min": 252.3,
+      "km_from_gpo_max": 278.4,
+      "km_to_store_min": 230.4
+    },
+    "5630": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Edilillie",
+        "Edillilie"
+      ],
+      "km_from_gpo_min": 270.8,
+      "km_from_gpo_max": 270.8,
+      "km_to_store_min": 260.6
+    },
+    "5631": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Cummins",
+        "Cockaleechie"
+      ],
+      "km_from_gpo_min": 273.3,
+      "km_from_gpo_max": 273.3,
+      "km_to_store_min": 262.6
+    },
+    "5632": {
+      "action": "geocode_address",
+      "reason": "mixed_or_greyzone",
+      "localities": [
+        "Kapinnie",
+        "Karkoo",
+        "Mitchell",
+        "Yeelanna"
+      ],
+      "km_from_gpo_min": 9.7,
+      "km_from_gpo_max": 297.5,
+      "km_to_store_min": 2.2
+    },
+    "5633": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Lock",
+        "Boonerdo",
+        "Ulyerra"
+      ],
+      "km_from_gpo_min": 285.7,
+      "km_from_gpo_max": 315.2,
+      "km_to_store_min": 273.5
+    },
+    "5640": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Jamieson",
+        "Waddikee",
+        "Cleve",
+        "Campoona"
+      ],
+      "km_from_gpo_min": 236.4,
+      "km_from_gpo_max": 280.9,
+      "km_to_store_min": 224.0
+    },
+    "5641": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Yeltana",
+        "Panitya",
+        "Bungeroo",
+        "Cortlinye",
+        "Barna",
+        "Yalanda",
+        "Cunyarie",
+        "Pinkawillinie",
+        "Kelly",
+        "Wilcherry",
+        "Buckleboo",
+        "Solomon",
+        "Caralue",
+        "Kimba",
+        "Moseley"
+      ],
+      "km_from_gpo_min": 253.4,
+      "km_from_gpo_max": 331.4,
+      "km_to_store_min": 239.1
+    },
+    "5642": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Kielpa",
+        "Darke Peak",
+        "Murlong",
+        "Rudall",
+        "Hambidge"
+      ],
+      "km_from_gpo_min": 255.2,
+      "km_from_gpo_max": 274.2,
+      "km_to_store_min": 242.9
+    },
+    "5650": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Warramboo",
+        "Koongawa",
+        "Cootra"
+      ],
+      "km_from_gpo_min": 306.5,
+      "km_from_gpo_max": 334.5,
+      "km_to_store_min": 294.0
+    },
+    "5651": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Kyancutta"
+      ],
+      "km_from_gpo_min": 343.5,
+      "km_from_gpo_max": 343.5,
+      "km_to_store_min": 331.1
+    },
+    "5652": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Paney",
+        "Pygery",
+        "Wudinna"
+      ],
+      "km_from_gpo_min": 356.7,
+      "km_from_gpo_max": 362.5,
+      "km_to_store_min": 344.3
+    },
+    "5653": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Yaninee"
+      ],
+      "km_from_gpo_min": 377.8,
+      "km_from_gpo_max": 377.8,
+      "km_to_store_min": 365.4
+    },
+    "5654": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Cocata",
+        "Minnipa",
+        "Karcultaby",
+        "Mount Damper"
+      ],
+      "km_from_gpo_min": 380.3,
+      "km_from_gpo_max": 412.8,
+      "km_to_store_min": 368.1
+    },
+    "5655": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Kaldoonera",
+        "Gawler Ranges",
+        "Narlaby",
+        "Bockelberg",
+        "Lockes Claypan",
+        "Pygery",
+        "Poochera"
+      ],
+      "km_from_gpo_min": 362.5,
+      "km_from_gpo_max": 431.7,
+      "km_to_store_min": 350.0
+    },
+    "5660": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Chilpenunda",
+        "Cungena"
+      ],
+      "km_from_gpo_min": 443.7,
+      "km_from_gpo_max": 443.7,
+      "km_to_store_min": 431.3
+    },
+    "5661": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Pimbaacla",
+        "Wallala",
+        "Yantanabie",
+        "Wirrulla",
+        "Koolgera"
+      ],
+      "km_from_gpo_min": 456.5,
+      "km_from_gpo_max": 481.2,
+      "km_to_store_min": 444.0
+    },
+    "5670": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Colton",
+        "Talia",
+        "Mount Wedge",
+        "Palkagee",
+        "Polda",
+        "Bramfield",
+        "Coolillie",
+        "Ulyerra",
+        "Elliston",
+        "Kappawanta",
+        "Mount Joy"
+      ],
+      "km_from_gpo_min": 315.2,
+      "km_from_gpo_max": 386.2,
+      "km_to_store_min": 302.9
+    },
+    "5671": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Witera",
+        "Colley",
+        "Tyringa",
+        "Calca",
+        "Baird Bay",
+        "Port Kenny",
+        "Mount Cooper",
+        "Mortana"
+      ],
+      "km_from_gpo_min": 409.3,
+      "km_from_gpo_max": 442.2,
+      "km_to_store_min": 397.3
+    },
+    "5680": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Maryvale",
+        "Mudamuckla",
+        "Eba Anchorage",
+        "Carawa",
+        "Puntabie",
+        "Inkster",
+        "Streaky Bay",
+        "Perlubie",
+        "Westall",
+        "Yanerbie",
+        "Haslam",
+        "Smoky Bay",
+        "Laura Bay",
+        "Pinjarra Station",
+        "Sceale Bay",
+        "Petina",
+        "Piednippie",
+        "Chinbingina",
+        "Nunjikompita",
+        "Pureba",
+        "Chandada"
+      ],
+      "km_from_gpo_min": 425.6,
+      "km_from_gpo_max": 534.7,
+      "km_to_store_min": 413.4
+    },
+    "5690": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Oak Valley",
+        "Yellabinna",
+        "Charra",
+        "Koonibba",
+        "Maltee",
+        "Coorabie",
+        "Kalanbi",
+        "Wandana",
+        "Yalata",
+        "Watraba",
+        "Nadia",
+        "Uworra",
+        "White Well Corner",
+        "Ceduna Waters",
+        "Ceduna",
+        "Chundaria",
+        "Thevenard",
+        "Mitchidy Moola",
+        "Yumbarra",
+        "Nanbona",
+        "Nullarbor",
+        "Nundroo",
+        "Denial Bay",
+        "Penong",
+        "Fowlers Bay",
+        "Bookabie",
+        "Merghiny"
+      ],
+      "km_from_gpo_min": 538.5,
+      "km_from_gpo_max": 955.5,
+      "km_to_store_min": 526.0
+    },
+    "5700": {
+      "action": "allow",
+      "reason": "user_override_town",
+      "localities": [
+        "Davenport",
+        "Blanche Harbor",
+        "Port Augusta West",
+        "Port Paterson",
+        "Port Augusta North",
+        "Willsden",
+        "Winninowie",
+        "Cultana",
+        "Miranda",
+        "Port Augusta",
+        "Wami Kata",
+        "Mundallio",
+        "Commissariat Point"
+      ],
+      "km_from_gpo_min": 253.4,
+      "km_from_gpo_max": 285.8,
+      "km_to_store_min": 222.5
+    },
+    "5701": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Tarcoola",
+        "Cook",
+        "Port Augusta",
+        "Woolundunga",
+        "Arkaroola Village"
+      ],
+      "km_from_gpo_min": 272.7,
+      "km_from_gpo_max": 601.4,
+      "km_to_store_min": 240.9
+    },
+    "5710": {
+      "action": "allow",
+      "reason": "user_override_town",
+      "localities": [
+        "Kingoonya",
+        "Port Augusta",
+        "Tarcoola",
+        "Stirling North",
+        "Glendambo",
+        "Nonning",
+        "Cook"
+      ],
+      "km_from_gpo_min": 281.1,
+      "km_from_gpo_max": 601.4,
+      "km_to_store_min": 250.2
+    },
+    "5713": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Lake Torrens",
+        "Mount Arden",
+        "Kootaberra",
+        "Lake Torrens Station",
+        "Pernatty",
+        "Wintabatinyana",
+        "Island Lagoon",
+        "Emeroo",
+        "Wallerberdina",
+        "Yadlamalka",
+        "South Gap",
+        "Wilkatana Station",
+        "Oakden Hills"
+      ],
+      "km_from_gpo_min": 121.5,
+      "km_from_gpo_max": 295.3,
+      "km_to_store_min": 96.6
+    },
+    "5715": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Wartaka",
+        "Carriewerloo",
+        "Illeroo",
+        "Pandurra",
+        "Yudnapinna",
+        "Lincoln Gap",
+        "Yalymboo"
+      ],
+      "km_from_gpo_min": 356.6,
+      "km_from_gpo_max": 356.6,
+      "km_to_store_min": 334.5
+    },
+    "5717": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Uno",
+        "Siam",
+        "Lake Everard",
+        "Nonning",
+        "Thurlga",
+        "Kokatha",
+        "Kondoolka",
+        "Hiltaba",
+        "Kolendo",
+        "Mount Ive",
+        "Lake Macfarlane",
+        "Yardea",
+        "Lake Gairdner",
+        "Mahanewo",
+        "Moonaree"
+      ],
+      "km_from_gpo_min": 332.7,
+      "km_from_gpo_max": 363.1,
+      "km_to_store_min": 310.9
+    },
+    "5719": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Bon Bon",
+        "Wirraminna",
+        "Lake Harris",
+        "Wilgena",
+        "Glendambo",
+        "Mulgathing",
+        "Bulgunnia",
+        "Coondambo",
+        "Commonwealth Hill",
+        "Kingoonya"
+      ],
+      "km_from_gpo_min": 514.4,
+      "km_from_gpo_max": 541.2,
+      "km_to_store_min": 491.4
+    },
+    "5720": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Woomera",
+        "Bosworth",
+        "Stuarts Creek",
+        "Millers Creek",
+        "Purple Downs",
+        "Parakylia",
+        "Mount Vivian",
+        "Mount Eba",
+        "Pimba",
+        "Billa Kalina",
+        "Arcoona"
+      ],
+      "km_from_gpo_min": 441.5,
+      "km_from_gpo_max": 597.6,
+      "km_to_store_min": 413.8
+    },
+    "5722": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Andamooka",
+        "Andamooka Station"
+      ],
+      "km_from_gpo_min": 516.0,
+      "km_from_gpo_max": 516.0,
+      "km_to_store_min": 484.7
+    },
+    "5723": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Mount Clarence Station",
+        "Evelyn Downs",
+        "Nilpinna Station",
+        "William Creek",
+        "Coober Pedy",
+        "Mabel Creek",
+        "Mount Barry",
+        "Mount Willoughby",
+        "Allandale Station",
+        "Wintinna",
+        "Anna Creek",
+        "Ingomar",
+        "Arckaringa",
+        "Mcdouall Peak"
+      ],
+      "km_from_gpo_min": 702.6,
+      "km_from_gpo_max": 818.4,
+      "km_to_store_min": 672.4
+    },
+    "5724": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Marla",
+        "Welbourn Hill",
+        "Mintabie"
+      ],
+      "km_from_gpo_min": 971.3,
+      "km_from_gpo_max": 985.8,
+      "km_to_store_min": 947.1
+    },
+    "5725": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Olympic Dam",
+        "Roxby Downs",
+        "Roxby Downs Station"
+      ],
+      "km_from_gpo_min": 510.9,
+      "km_from_gpo_max": 524.1,
+      "km_to_store_min": 481.1
+    },
+    "5730": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Beltana",
+        "Angorigina",
+        "Beltana Station",
+        "Ediacara",
+        "Gum Creek Station",
+        "Moolooloo",
+        "Moorillah",
+        "Nilpena",
+        "Motpena",
+        "Mount Falkland",
+        "Narrina",
+        "Oratunga Station",
+        "Puttapa",
+        "Parachilna",
+        "Blinman",
+        "Alpana",
+        "Wirrealpa",
+        "Warraweena"
+      ],
+      "km_from_gpo_min": 421.5,
+      "km_from_gpo_max": 462.1,
+      "km_to_store_min": 385.7
+    },
+    "5731": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Innamincka",
+        "Witchelina",
+        "Lyndhurst",
+        "Farina",
+        "Myrtle Springs",
+        "Durham Downs",
+        "Farina Station",
+        "Mount Lyndhurst",
+        "Gidgealpa",
+        "Leigh Creek Station",
+        "Bollards Lagoon",
+        "Coopers Creek",
+        "Murnpeowie",
+        "Strzelecki Desert",
+        "Mount Freeling",
+        "Moolawatana",
+        "Cordillo Downs",
+        "Leigh Creek",
+        "Lindon",
+        "Merty Merty",
+        "Mulgaria"
+      ],
+      "km_from_gpo_min": 482.5,
+      "km_from_gpo_max": 824.3,
+      "km_to_store_min": 446.5
+    },
+    "5732": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Gammon Ranges",
+        "Copley",
+        "Mount Serle",
+        "Moolawatana",
+        "Yankaninna",
+        "Umberatana",
+        "Wooltana",
+        "Angepena",
+        "Arkaroola",
+        "Mulga View",
+        "Manners Well",
+        "Burr Well",
+        "Pinda Springs",
+        "North Moolooloo",
+        "Wertaloona",
+        "Nepabunna"
+      ],
+      "km_from_gpo_min": 486.1,
+      "km_from_gpo_max": 568.5,
+      "km_to_store_min": 449.1
+    },
+    "5733": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Mungeranie",
+        "Cowarie",
+        "Kalamurina",
+        "Mulka",
+        "Alton Downs Station",
+        "Lake Eyre",
+        "Farina",
+        "Mundowdna",
+        "Dulkaninna",
+        "Pandie Pandie",
+        "Marree Station",
+        "Callanna",
+        "Marree",
+        "Clayton Station",
+        "Clifton Hills Station",
+        "Etadunna",
+        "Muloorina"
+      ],
+      "km_from_gpo_min": 541.5,
+      "km_from_gpo_max": 803.6,
+      "km_to_store_min": 505.8
+    },
+    "5734": {
+      "action": "allow",
+      "reason": "all_localities_clear",
+      "localities": [
+        "Simpson Desert",
+        "Eringa",
+        "Mount Sarah",
+        "Crown Point",
+        "Witjira",
+        "Macumba",
+        "Oodnadatta",
+        "Todmorden"
+      ],
+      "km_from_gpo_min": 873.2,
+      "km_from_gpo_max": 873.2,
+      "km_to_store_min": 844.1
+    },
+    "5800": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Adelaide"
+      ],
+      "km_from_gpo_min": 0.2,
+      "km_from_gpo_max": 0.2,
+      "km_to_store_min": 0.7
+    },
+    "5801": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Adelaide"
+      ],
+      "km_from_gpo_min": 0.2,
+      "km_from_gpo_max": 0.2,
+      "km_to_store_min": 0.7
+    },
+    "5810": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Adelaide"
+      ],
+      "km_from_gpo_min": 0.2,
+      "km_from_gpo_max": 0.2,
+      "km_to_store_min": 0.7
+    },
+    "5839": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Adelaide"
+      ],
+      "km_from_gpo_min": 0.2,
+      "km_from_gpo_max": 0.2,
+      "km_to_store_min": 0.7
+    },
+    "5942": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Regency Park"
+      ],
+      "km_from_gpo_min": 7.8,
+      "km_from_gpo_max": 7.8,
+      "km_to_store_min": 2.5
+    },
+    "5950": {
+      "action": "deny",
+      "reason": "all_localities_fail",
+      "localities": [
+        "Adelaide Airport",
+        "Export Park"
+      ],
+      "km_from_gpo_min": 6.2,
+      "km_from_gpo_max": 6.2,
+      "km_to_store_min": 3.1
+    }
+  }
+}

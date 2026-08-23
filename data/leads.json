@@ -1,0 +1,42 @@
+[
+  {
+    "id": "lead_mt5hckrk1b0za",
+    "createdAt": "2026-08-23T07:22:48.992Z",
+    "amount": 5000,
+    "postcode": "5600",
+    "suburb": "Whyalla Dc",
+    "employmentStatus": "full_time",
+    "weeklyIncome": 850,
+    "centrelinkPercentage": 0,
+    "isBankruptOrPart9": true,
+    "firstName": "Adam",
+    "lastName": "Menadue",
+    "mobile": "0423808559",
+    "email": "amenadue73@gmail.com",
+    "status": "INCOME_DISQUALIFIED",
+    "territoryResult": {
+      "action": "allow",
+      "reason": "user_override_town"
+    }
+  },
+  {
+    "id": "lead_mt5h3tho02bxp",
+    "createdAt": "2026-08-23T07:16:00.396Z",
+    "amount": 5000,
+    "postcode": "5600",
+    "suburb": "Whyalla",
+    "employmentStatus": "full_time",
+    "weeklyIncome": 950,
+    "centrelinkPercentage": 0,
+    "isBankruptOrPart9": false,
+    "firstName": "John",
+    "lastName": "Test",
+    "mobile": "0412345678",
+    "email": "john.test@example.com",
+    "status": "QUALIFIED_PENDING_CALL",
+    "territoryResult": {
+      "action": "allow",
+      "reason": "user_override_town"
+    }
+  }
+]
