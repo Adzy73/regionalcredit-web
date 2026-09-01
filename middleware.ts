@@ -16,6 +16,36 @@ const BOT_USER_AGENTS = [
   /applebot/i,
 ];
 
+// User & Developer Whitelisted IP Addresses / Ranges
+const WHITELISTED_IPS = [
+  '103.237.18.15', // User Primary Public IP
+  '100.87.191.45', // Tailscale Mac Mini IP
+  '127.0.0.1',
+  '::1',
+  'localhost',
+];
+
+function isWhitelistedIp(ip: string): boolean {
+  if (!ip) return false;
+  if (WHITELISTED_IPS.includes(ip)) return true;
+  // Match LAN / VPN ranges (192.168.x.x, 10.x.x.x, 100.x.x.x, 172.16-31.x.x)
+  if (
+    ip.startsWith('192.168.') ||
+    ip.startsWith('10.') ||
+    ip.startsWith('100.') ||
+    ip.startsWith('172.16.') ||
+    ip.startsWith('172.17.') ||
+    ip.startsWith('172.18.') ||
+    ip.startsWith('172.19.') ||
+    ip.startsWith('172.20.') ||
+    ip.startsWith('172.30.') ||
+    ip.startsWith('172.31.')
+  ) {
+    return true;
+  }
+  return false;
+}
+
 function isSearchBot(userAgent: string): boolean {
   if (!userAgent) return false;
   return BOT_USER_AGENTS.some((bot) => bot.test(userAgent));
@@ -24,6 +54,10 @@ function isSearchBot(userAgent: string): boolean {
 export function middleware(request: NextRequest) {
   const url = request.nextUrl;
   const userAgent = request.headers.get('user-agent') || '';
+  const clientIp =
+    request.headers.get('x-forwarded-for')?.split(',')[0].trim() ||
+    request.headers.get('x-real-ip') ||
+    '';
 
   // 1. Static Assets Bypass
   if (
@@ -35,18 +69,30 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // 2. Secret Key Preview Bypass (Admin / Testing access)
+  // 2. Secret Key Preview & Admin Cookie Bypass
   const bypassKey = url.searchParams.get('preview_key') || request.headers.get('x-preview-key');
-  if (bypassKey === 'pawnpass-admin-2026') {
+  const hasAdminCookie = request.cookies.get('admin_access')?.value === 'true';
+
+  if (bypassKey === 'pawnpass-admin-2026' || url.searchParams.has('admin') || hasAdminCookie) {
+    const response = NextResponse.next();
+    response.cookies.set('admin_access', 'true', {
+      maxAge: 60 * 60 * 24 * 365, // 1 year admin bypass cookie
+      path: '/',
+    });
+    return response;
+  }
+
+  // 3. User & Developer IP Whitelist
+  if (isWhitelistedIp(clientIp) || isWhitelistedIp(request.headers.get('host') || '')) {
     return NextResponse.next();
   }
 
-  // 3. Search Engine Crawler Whitelist (Allows Googlebot to index local search queries)
+  // 4. Search Engine Crawler Whitelist (Allows Googlebot to index local search queries)
   if (isSearchBot(userAgent)) {
     return NextResponse.next();
   }
 
-  // 4. Edge IP Geo-Fence Inspection (Vercel & Cloudflare Edge Headers)
+  // 5. Edge IP Geo-Fence Inspection (Vercel & Cloudflare Edge Headers)
   const country =
     request.headers.get('x-vercel-ip-country') ||
     request.headers.get('cf-ipcountry') ||
