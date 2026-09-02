@@ -2,10 +2,13 @@ import { NextRequest, NextResponse } from 'next/server';
 import { validateTerritory } from '@/lib/territory-gate';
 import { saveLead, LeadSubmission } from '@/lib/lead-storage';
 import { sendLeadSmsAlert } from '@/lib/sms-notifier';
+import { sendLeadEmailAlert } from '@/lib/email-notifier';
 
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
+    const hostname = req.headers.get('host') || 'regionalcredit.au';
+
     const {
       amount,
       postcode,
@@ -65,12 +68,16 @@ export async function POST(req: NextRequest) {
       },
     };
 
-    // Save lead
+    // Save lead to disk/db
     saveLead(newLead);
 
-    // If qualified, trigger instant SMS alerts
+    // If qualified, trigger instant dual dispatch: SMS + Email
     if (status === 'QUALIFIED_PENDING_CALL') {
-      await sendLeadSmsAlert(newLead);
+      await Promise.all([
+        sendLeadSmsAlert(newLead),
+        sendLeadEmailAlert(newLead, hostname),
+      ]);
+
       return NextResponse.json({
         success: true,
         status: 'QUALIFIED',
