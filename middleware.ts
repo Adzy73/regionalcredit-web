@@ -18,8 +18,12 @@ const BOT_USER_AGENTS = [
 
 // User & Home Office Whitelisted IPs / Network Ranges
 const WHITELISTED_IPS = [
-  '103.237.18.15', // Home Office Public IP
-  '100.87.191.45', // Tailscale Mac Mini IP
+  '103.237.18.15',   // Home Office Public IP
+  '100.87.191.45',   // Tailscale Mac Mini IP
+  '100.72.167.75',   // Laptop (MacBook Pro) Tailscale IP
+  '127.0.0.1',
+  '::1',
+  'localhost',
 ];
 
 // Domain to Specific Regional Town Mapping
@@ -41,6 +45,7 @@ function isWhitelistedIp(ip: string): boolean {
     ip.startsWith('192.168.') ||
     ip.startsWith('10.') ||
     ip.startsWith('100.') ||
+    ip.startsWith('fd7a:') ||
     ip.startsWith('172.16.') ||
     ip.startsWith('172.17.') ||
     ip.startsWith('172.18.') ||
@@ -78,20 +83,20 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // 2. Admin Preview & Home Office Cookie Bypass
+  // 2. Admin Preview & Laptop Cookie Bypass
   const bypassKey = url.searchParams.get('preview_key') || request.headers.get('x-preview-key');
   const hasAdminCookie = request.cookies.get('admin_access')?.value === 'true';
 
   if (bypassKey === 'pawnpass-admin-2026' || url.searchParams.has('admin') || hasAdminCookie) {
     const response = NextResponse.next();
     response.cookies.set('admin_access', 'true', {
-      maxAge: 60 * 60 * 24 * 365, // 1 year admin bypass cookie
+      maxAge: 60 * 60 * 24 * 365, // 1 year admin bypass cookie for laptop
       path: '/',
     });
     return response;
   }
 
-  // 3. User Home Office IP Whitelist (See all 4 sites at home office address)
+  // 3. Laptop / Tailscale / Home Office IP Whitelist
   if (clientIp && isWhitelistedIp(clientIp)) {
     return NextResponse.next();
   }
