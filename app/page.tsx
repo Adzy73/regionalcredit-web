@@ -1,11 +1,20 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import LocCalculator from '@/components/LocCalculator';
 import ApplicationFunnel from '@/components/ApplicationFunnel';
-import { ShieldCheck, Zap, CheckCircle2, Clock, MapPin, DollarSign, HelpCircle, PhoneCall, Smartphone } from 'lucide-react';
+import { getDomainConfig, DomainBrandConfig } from '@/lib/domain-config';
+import { ShieldCheck, CheckCircle2, MapPin } from 'lucide-react';
 
 export default function HomePage() {
+  const [brand, setBrand] = useState<DomainBrandConfig>(getDomainConfig());
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setBrand(getDomainConfig(window.location.hostname));
+    }
+  }, []);
+
   const handleScrollToFunnel = () => {
     const funnelEl = document.getElementById('apply-funnel');
     if (funnelEl) {
@@ -19,16 +28,16 @@ export default function HomePage() {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-6 text-left">
           <div className="inline-flex items-center gap-2 text-xs font-bold px-3 py-1.5 rounded-full bg-orange-500/10 text-[#FF6B00] border border-orange-500/20">
-            <MapPin className="w-4 h-4" /> Regional South Australia Dedicated Service
+            <MapPin className="w-4 h-4" /> {brand.badgeText}
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-            No store in town? <br />
-            <span className="text-[#FF6B00]">Flexible Line of Credit</span> up to $10,000.
+            {brand.heroHeadline} <br />
+            <span className="text-[#FF6B00]">{brand.heroHighlight}</span> up to $10,000.
           </h1>
 
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-            Apply online from your phone anywhere in regional SA. Lock in a flexible revolving line of credit ($2,050 to $10,000) with <strong className="text-white">$0 establishment fees</strong> and <strong className="text-white">$0 monthly fees</strong>.
+            {brand.heroSubtext}
           </p>
 
           <div className="grid grid-cols-2 gap-3 pt-2 text-xs text-slate-300 font-medium">
