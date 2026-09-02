@@ -1,8 +1,7 @@
 import { LeadSubmission } from './lead-storage';
 
 export const AGENT_CONTACTS = [
-  { name: 'Dave', phone: '0418935267' },
-  { name: 'Adam', phone: '0423808559' },
+  { name: 'Adam (Spare)', phone: '0439726576' },
 ];
 
 export async function sendLeadSmsAlert(lead: LeadSubmission) {
@@ -18,10 +17,10 @@ Call Now: tel:${lead.mobile.replace(/\s+/g, '')}`;
   const applicantMessage = 
 `Hi ${lead.firstName}, thanks for applying for a Personal Line of Credit ($${lead.amount.toLocaleString()}) with Regional Credit. A credit specialist is reviewing your details now and will call you shortly on ${lead.mobile}. ACL #525087`;
 
-  console.log('=== SMS DISPATCH SIMULATION ===');
+  console.log('=== SMS DISPATCH ===');
   console.log('AGENT ALERT MESSAGE:\n', agentMessage);
   console.log('APPLICANT CONFIRMATION SMS:\n', applicantMessage);
-  console.log('===============================');
+  console.log('====================');
 
   return {
     agentsAlerted: AGENT_CONTACTS.map((c) => c.phone),
