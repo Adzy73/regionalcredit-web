@@ -16,19 +16,27 @@ const BOT_USER_AGENTS = [
   /applebot/i,
 ];
 
-// User & Developer Whitelisted IP Addresses / Ranges
+// User & Home Office Whitelisted IPs / Network Ranges
 const WHITELISTED_IPS = [
-  '103.237.18.15', // User Primary Public IP
+  '103.237.18.15', // Home Office Public IP
   '100.87.191.45', // Tailscale Mac Mini IP
-  '127.0.0.1',
-  '::1',
-  'localhost',
 ];
+
+// Domain to Specific Regional Town Mapping
+const DOMAIN_TOWN_MAP: Record<string, string> = {
+  'regionalcredit.au': 'mount gambier',
+  'www.regionalcredit.au': 'mount gambier',
+  'regionalcreditonline.com.au': 'whyalla',
+  'www.regionalcreditonline.com.au': 'whyalla',
+  'regionalcreditdirect.com.au': 'port pirie',
+  'www.regionalcreditdirect.com.au': 'port pirie',
+  'regionalcreditline.com.au': 'port lincoln',
+  'www.regionalcreditline.com.au': 'port lincoln',
+};
 
 function isWhitelistedIp(ip: string): boolean {
   if (!ip) return false;
   if (WHITELISTED_IPS.includes(ip)) return true;
-  // Match LAN / VPN ranges (192.168.x.x, 10.x.x.x, 100.x.x.x, 172.16-31.x.x)
   if (
     ip.startsWith('192.168.') ||
     ip.startsWith('10.') ||
@@ -54,6 +62,7 @@ function isSearchBot(userAgent: string): boolean {
 export function middleware(request: NextRequest) {
   const url = request.nextUrl;
   const userAgent = request.headers.get('user-agent') || '';
+  const hostname = (request.headers.get('host') || '').toLowerCase().split(':')[0];
   const clientIp =
     request.headers.get('x-forwarded-for')?.split(',')[0].trim() ||
     request.headers.get('x-real-ip') ||
@@ -69,7 +78,7 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // 2. Secret Key Preview & Admin Cookie Bypass
+  // 2. Admin Preview & Home Office Cookie Bypass
   const bypassKey = url.searchParams.get('preview_key') || request.headers.get('x-preview-key');
   const hasAdminCookie = request.cookies.get('admin_access')?.value === 'true';
 
@@ -82,17 +91,17 @@ export function middleware(request: NextRequest) {
     return response;
   }
 
-  // 3. User & Developer IP Whitelist
-  if (isWhitelistedIp(clientIp) || isWhitelistedIp(request.headers.get('host') || '')) {
+  // 3. User Home Office IP Whitelist (See all 4 sites at home office address)
+  if (clientIp && isWhitelistedIp(clientIp)) {
     return NextResponse.next();
   }
 
-  // 4. Search Engine Crawler Whitelist (Allows Googlebot to index local search queries)
+  // 4. Search Engine Crawler Whitelist (Allows Googlebot to index each site for its target town search terms)
   if (isSearchBot(userAgent)) {
     return NextResponse.next();
   }
 
-  // 5. Edge IP Geo-Fence Inspection (Vercel & Cloudflare Edge Headers)
+  // 5. Strict Domain-to-Town Edge Geo Inspection
   const country =
     request.headers.get('x-vercel-ip-country') ||
     request.headers.get('cf-ipcountry') ||
@@ -111,6 +120,8 @@ export function middleware(request: NextRequest) {
     ''
   ).toLowerCase();
 
+  const requiredTown = DOMAIN_TOWN_MAP[hostname];
+
   // If edge geo headers are present:
   if (country) {
     // Block non-Australian visitors
@@ -118,14 +129,13 @@ export function middleware(request: NextRequest) {
       return new NextResponse('404 Not Found', { status: 404 });
     }
 
-    // Block non-South Australia visitors (if region header is present)
+    // Block non-South Australia visitors
     if (region && region.toUpperCase() !== 'SA') {
       return new NextResponse('404 Not Found', { status: 404 });
     }
 
-    // Targeted Town Filter (Environment-configurable, e.g. NEXT_PUBLIC_TARGET_TOWN=whyalla)
-    const targetCity = process.env.NEXT_PUBLIC_TARGET_TOWN?.toLowerCase();
-    if (targetCity && city && city !== targetCity) {
+    // Enforce 1:1 Town Restriction for this specific domain
+    if (requiredTown && city && !city.includes(requiredTown)) {
       return new NextResponse('404 Not Found', { status: 404 });
     }
   }

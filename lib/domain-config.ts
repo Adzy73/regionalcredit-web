@@ -1,5 +1,8 @@
 export interface DomainBrandConfig {
   domain: string;
+  targetTown: string;
+  targetPostcodes: string[];
+  population: string;
   badgeText: string;
   heroHeadline: string;
   heroHighlight: string;
@@ -11,38 +14,50 @@ export interface DomainBrandConfig {
 export const DOMAIN_CONFIGS: Record<string, DomainBrandConfig> = {
   'regionalcredit.au': {
     domain: 'regionalcredit.au',
-    badgeText: 'Official Regional SA Credit Access Portal',
-    heroHeadline: 'No store in town?',
+    targetTown: 'Mount Gambier',
+    targetPostcodes: ['5290', '5291'],
+    population: '25,591',
+    badgeText: 'Mount Gambier & Limestone Coast Dedicated Portal',
+    heroHeadline: 'Mount Gambier Resident?',
     heroHighlight: 'Flexible Line of Credit',
-    heroSubtext: 'Apply online from your phone anywhere in regional SA. Lock in a flexible revolving credit line ($2,050 to $10,000) with $0 setup and $0 monthly fees.',
-    primaryCtaText: 'Check Regional Eligibility',
+    heroSubtext: 'Dedicated online line of credit ($2,050 to $10,000) for Mount Gambier and Limestone Coast residents with $0 establishment fees and $0 monthly fees.',
+    primaryCtaText: 'Check Mount Gambier Pre-Qual',
     themeAccent: '#FF6B00',
   },
   'regionalcreditonline.com.au': {
     domain: 'regionalcreditonline.com.au',
-    badgeText: '100% Digital • Zero Store Visit Required',
-    heroHeadline: 'Fast Mobile Line of Credit,',
+    targetTown: 'Whyalla',
+    targetPostcodes: ['5600', '5608'],
+    population: '20,880',
+    badgeText: 'Whyalla & Eyre Peninsula 100% Digital Access',
+    heroHeadline: 'Whyalla Mobile Line of Credit,',
     heroHighlight: '100% Online Approval',
-    heroSubtext: 'No paper forms or branch visits. Complete your pre-qualification from your phone in under 60 seconds for instant agent review.',
-    primaryCtaText: 'Apply Online Now',
+    heroSubtext: 'Apply directly from your phone in Whyalla. Zero paper forms or branch visits. Rapid assessment and direct bank transfer.',
+    primaryCtaText: 'Apply Online in Whyalla',
     themeAccent: '#10B981',
   },
   'regionalcreditdirect.com.au': {
     domain: 'regionalcreditdirect.com.au',
-    badgeText: 'Direct Regional Agent Access',
-    heroHeadline: 'Direct Cash Access for Regional SA,',
+    targetTown: 'Port Pirie',
+    targetPostcodes: ['5540'],
+    population: '13,896',
+    badgeText: 'Port Pirie Direct Regional Agent Line',
+    heroHeadline: 'Port Pirie Direct Cash Line,',
     heroHighlight: 'Same-Day Agent Callbacks',
-    heroSubtext: 'Speak directly with our regional credit specialists. Simple 90-day bank check with rapid assessment and same-day direct transfer.',
-    primaryCtaText: 'Speak to an Agent Today',
+    heroSubtext: 'Connect directly with our regional credit specialists serving Port Pirie. Fast 90-day bank check with same-day payout.',
+    primaryCtaText: 'Speak to Port Pirie Agent',
     themeAccent: '#3B82F6',
   },
   'regionalcreditline.com.au': {
     domain: 'regionalcreditline.com.au',
-    badgeText: 'Revolving Personal Line of Credit',
-    heroHeadline: 'Revolving Credit Line $2k - $10k,',
+    targetTown: 'Port Lincoln',
+    targetPostcodes: ['5606', '5607'],
+    population: '13,810',
+    badgeText: 'Port Lincoln Revolving Line of Credit',
+    heroHeadline: 'Port Lincoln Revolving Credit $2k - $10k,',
     heroHighlight: 'Pay $0 Monthly Account Fees',
-    heroSubtext: 'Only pay interest on what you actually draw. Flexible repayments with full redraw ability whenever you need extra cash.',
-    primaryCtaText: 'Calculate Your Credit Line',
+    heroSubtext: 'Dedicated revolving credit line for Port Lincoln residents. Only pay interest on what you draw with full redraw flexibility.',
+    primaryCtaText: 'Calculate Port Lincoln Line',
     themeAccent: '#F59E0B',
   },
 };
