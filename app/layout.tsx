@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, JetBrains_Mono } from 'next/font/google';
 import JsonLdSchema from '@/components/JsonLdSchema';
+import Analytics from '@/components/Analytics';
 import './globals.css';
 
 const inter = Inter({
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${mono.variable} antialiased dark`}>
       <head>
         <JsonLdSchema />
+        <Analytics />
       </head>
       <body className="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans">
         {/* Navigation */}

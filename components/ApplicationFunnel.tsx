@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import { trackEvent } from './Analytics';
 import { MapPin, DollarSign, Briefcase, UserCheck, ArrowRight, ArrowLeft, CheckCircle, AlertCircle, Loader2, Phone, ShieldCheck } from 'lucide-react';
 
 interface ApplicationFunnelProps {
@@ -110,6 +111,13 @@ export default function ApplicationFunnel({ initialAmount = 5000 }: ApplicationF
       setLoading(false);
 
       if (res.ok && data.success) {
+        trackEvent('lead_submitted', {
+          amount,
+          postcode,
+          suburb,
+          leadId: data.leadId,
+        });
+
         setResult({
           success: true,
           status: data.status,

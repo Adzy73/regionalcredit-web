@@ -1,0 +1,54 @@
+{
+  "campaign_structure": {
+    "objective": "OUTBOUND_CLICKS / CONVERSIONS",
+    "optimization_event": "LEAD",
+    "daily_budget_per_town_aud": 20,
+    "age_targeting": "21 - 60",
+    "locations": {
+      "Mount Gambier": "Postcode 5290, 5291 (+20km radius)",
+      "Whyalla": "Postcode 5600, 5608 (+20km radius)",
+      "Port Pirie": "Postcode 5540 (+20km radius)",
+      "Port Lincoln": "Postcode 5606, 5607 (+20km radius)"
+    }
+  },
+  "angles": [
+    {
+      "angle_id": "speed_and_mobile",
+      "title": "100% Mobile & Fast Approval",
+      "primary_text": "Need flexible credit in {TOWN}? Access $2,000 to $10,000 directly from your mobile. No paper forms, $0 establishment fees, and $0 monthly account fees. Fast digital assessment and quick bank transfers. ACL #525087.",
+      "headline": "{TOWN} Residents: $2k-$10k Line of Credit",
+      "description": "100% online application \u2022 Takes 2 mins on your phone",
+      "cta": "Apply Now"
+    },
+    {
+      "angle_id": "transparent_fees",
+      "title": "Zero Hidden Fees & Flexible Redraws",
+      "primary_text": "Tired of high monthly loan fees? Our flexible personal line of credit gives {TOWN} residents revolving access to up to $10,000 with $0 setup costs and $0 monthly fees. Only pay interest on what you draw.",
+      "headline": "Borrow Up To $10,000 | $0 Monthly Fees",
+      "description": "Licensed SA Provider ACL #525087 \u2022 Flexible redraws anytime",
+      "cta": "Learn More"
+    },
+    {
+      "angle_id": "town_dedicated",
+      "title": "Dedicated Regional SA Credit Portal",
+      "primary_text": "Serving {TOWN} & regional South Australia. Pre-qualify online in under 2 minutes for a flexible credit line. Connect directly with our regional specialist team for rapid assessment.",
+      "headline": "Dedicated {TOWN} Personal Line of Credit",
+      "description": "Fast 90-day bank check \u2022 Direct agent callback",
+      "cta": "Check Pre-Qual"
+    }
+  ],
+  "creative_briefs": [
+    {
+      "concept": "Dark Mode Mobile UI Showcase",
+      "aspect_ratio": "1:1 (Feed) & 9:16 (Stories/Reels)",
+      "visual_description": "Clean dark-mode mobile screenshot showing the interactive $2,000 - $10,000 slider with the orange badge '{TOWN} Resident Access' and green checkmark '$0 Monthly Fees'.",
+      "overlay_text": "Need $2,000 to $10,000 in {TOWN}?\n$0 Establishment Fee \u2022 $0 Monthly Fees"
+    },
+    {
+      "concept": "Regional Lifestyle & Trust Badge",
+      "aspect_ratio": "1:1 (Feed)",
+      "visual_description": "Authentic regional South Australia scenery (coastal or regional town landscape) with clean bold text card overlay.",
+      "overlay_text": "{TOWN} Personal Credit Line\nFlexible Redraws \u2022 ACL 525087"
+    }
+  ]
+}
