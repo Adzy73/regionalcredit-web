@@ -240,6 +240,7 @@ export default function ApplicationFunnel({ initialAmount = 5000 }: ApplicationF
               <div className="flex gap-2">
                 <input
                   type="text"
+                  inputMode="numeric"
                   maxLength={4}
                   value={postcode}
                   onChange={(e) => {
@@ -273,7 +274,10 @@ export default function ApplicationFunnel({ initialAmount = 5000 }: ApplicationF
                   <span>Great news! Postcode <strong>{postcode}</strong> is in our approved regional service zone.</span>
                 </div>
                 <button
-                  onClick={() => setStep(2)}
+                  onClick={() => {
+                    setStep(2);
+                    trackEvent('funnel_step_2_reached', { postcode });
+                  }}
                   className="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-4 py-2 rounded-lg text-xs shrink-0"
                 >
                   Continue →
@@ -367,7 +371,10 @@ export default function ApplicationFunnel({ initialAmount = 5000 }: ApplicationF
               <ArrowLeft className="w-4 h-4" /> Back
             </button>
             <button
-              onClick={() => setStep(3)}
+              onClick={() => {
+                setStep(3);
+                trackEvent('funnel_step_3_reached', { amount });
+              }}
               className="flex-1 bg-[#FF6B00] hover:bg-[#e05e00] text-white font-bold py-3 px-6 rounded-xl text-xs flex items-center justify-center gap-2"
             >
               Next: Financial Details <ArrowRight className="w-4 h-4" />
@@ -413,6 +420,7 @@ export default function ApplicationFunnel({ initialAmount = 5000 }: ApplicationF
                 <span className="absolute left-4 top-3 text-slate-500 font-mono text-xs">$</span>
                 <input
                   type="number"
+                  inputMode="numeric"
                   value={weeklyIncome}
                   onChange={(e) => setWeeklyIncome(Number(e.target.value))}
                   placeholder="850"
@@ -467,6 +475,7 @@ export default function ApplicationFunnel({ initialAmount = 5000 }: ApplicationF
                 }
                 setErrorMsg('');
                 setStep(4);
+                trackEvent('funnel_step_4_reached', { weeklyIncome, employmentStatus });
               }}
               className="flex-1 bg-[#FF6B00] hover:bg-[#e05e00] text-white font-bold py-3 px-6 rounded-xl text-xs flex items-center justify-center gap-2"
             >
@@ -524,6 +533,7 @@ export default function ApplicationFunnel({ initialAmount = 5000 }: ApplicationF
               </label>
               <input
                 type="tel"
+                inputMode="tel"
                 required
                 value={mobile}
                 onChange={(e) => setMobile(e.target.value)}
