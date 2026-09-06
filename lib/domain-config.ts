@@ -10,6 +10,7 @@ export interface DomainBrandConfig {
   primaryCtaText: string;
   themeAccent: string;
   googleSiteVerification?: string;
+  ga4MeasurementId?: string;
 }
 
 export const DOMAIN_CONFIGS: Record<string, DomainBrandConfig> = {
@@ -25,6 +26,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainBrandConfig> = {
     primaryCtaText: 'Check Mount Gambier Pre-Qual',
     themeAccent: '#FF6B00',
     googleSiteVerification: 'FUReDIJSpXPZgwnrYzgSdV6RMVwCS5nFVCk',
+    ga4MeasurementId: 'G-K8LN402MTD',
   },
   'regionalcreditonline.com.au': {
     domain: 'regionalcreditonline.com.au',
@@ -38,6 +40,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainBrandConfig> = {
     primaryCtaText: 'Apply Online in Whyalla',
     themeAccent: '#10B981',
     googleSiteVerification: '8RlaMkOiPpYnBvyBhcAnOFZhG42zmrwQu2-gl',
+    ga4MeasurementId: 'G-NXBR3GYR12',
   },
   'regionalcreditdirect.com.au': {
     domain: 'regionalcreditdirect.com.au',
@@ -51,6 +54,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainBrandConfig> = {
     primaryCtaText: 'Speak to Port Pirie Agent',
     themeAccent: '#3B82F6',
     googleSiteVerification: 'lK8PEfljTr8HzHLzjuTVnwKPbXwwiJtyyAL1xKc',
+    ga4MeasurementId: 'G-K81QK0MLZN',
   },
   'regionalcreditline.com.au': {
     domain: 'regionalcreditline.com.au',
@@ -64,6 +68,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainBrandConfig> = {
     primaryCtaText: 'Calculate Port Lincoln Line',
     themeAccent: '#F59E0B',
     googleSiteVerification: 'zYVYywyrIQ0COBh2MKdSjfNvducsDZgOqc1Ek',
+    ga4MeasurementId: 'G-PSS8JL8692',
   },
 };
 

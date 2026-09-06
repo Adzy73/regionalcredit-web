@@ -1,6 +1,8 @@
 'use client';
 
 import Script from 'next/script';
+import { useState, useEffect } from 'react';
+import { getDomainConfig } from '@/lib/domain-config';
 
 declare global {
   interface Window {
@@ -37,9 +39,18 @@ export const trackEvent = (eventName: string, eventParams: Record<string, any> =
 };
 
 export default function Analytics() {
+  const [ga4Id, setGa4Id] = useState<string | undefined>(process.env.NEXT_PUBLIC_GA4_ID);
   const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
-  const ga4Id = process.env.NEXT_PUBLIC_GA4_ID;
   const fbPixelId = process.env.NEXT_PUBLIC_FB_PIXEL_ID;
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const config = getDomainConfig(window.location.hostname);
+      if (config.ga4MeasurementId) {
+        setGa4Id(config.ga4MeasurementId);
+      }
+    }
+  }, []);
 
   return (
     <>
