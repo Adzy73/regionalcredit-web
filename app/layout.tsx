@@ -18,6 +18,14 @@ export const metadata: Metadata = {
   title: 'Regional Credit SA | Flexible Personal Line of Credit up to $10,000',
   description: 'Flexible personal line of credit for regional South Australia residents. $0 establishment fees, $0 monthly fees. Fast online pre-approval and live agent callbacks.',
   keywords: 'line of credit SA, regional loans, fast cash loans Port Pirie, Whyalla loans, Mount Gambier line of credit',
+  verification: {
+    google: [
+      'FUReDIJSpXPZgwnrYzgSdV6RMVwCS5nFVCk',
+      '8RlaMkOiPpYnBvyBhcAnOFZhG42zmrwQu2-gl',
+      'lK8PEfljTr8HzHLzjuTVnwKPbXwwiJtyyAL1xKc',
+      'zYVYywyrIQ0COBh2MKdSjfNvducsDZgOqc1Ek',
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -28,10 +36,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${mono.variable} antialiased dark`}>
       <head>
-        <meta name="google-site-verification" content="FUReDIJSpXPZgwnrYzgSdV6RMVwCS5nFVCk" />
-        <meta name="google-site-verification" content="8RlaMkOiPpYnBvyBhcAnOFZhG42zmrwQu2-gl" />
-        <meta name="google-site-verification" content="lK8PEfljTr8HzHLzjuTVnwKPbXwwiJtyyAL1xKc" />
-        <meta name="google-site-verification" content="zYVYywyrIQ0COBh2MKdSjfNvducsDZgOqc1Ek" />
         <JsonLdSchema />
         <Analytics />
       </head>
