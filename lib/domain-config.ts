@@ -9,6 +9,7 @@ export interface DomainBrandConfig {
   heroSubtext: string;
   primaryCtaText: string;
   themeAccent: string;
+  googleSiteVerification?: string;
 }
 
 export const DOMAIN_CONFIGS: Record<string, DomainBrandConfig> = {
@@ -23,6 +24,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainBrandConfig> = {
     heroSubtext: 'Dedicated online line of credit ($2,050 to $10,000) for Mount Gambier and Limestone Coast residents with $0 establishment fees and $0 monthly fees.',
     primaryCtaText: 'Check Mount Gambier Pre-Qual',
     themeAccent: '#FF6B00',
+    googleSiteVerification: 'FUReDIJSpXPZgwnrYzgSdV6RMVwCS5nFVCk',
   },
   'regionalcreditonline.com.au': {
     domain: 'regionalcreditonline.com.au',
