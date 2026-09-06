@@ -80,6 +80,10 @@ export function middleware(request: NextRequest) {
     url.pathname.startsWith('/robots.txt') ||
     url.pathname.startsWith('/sitemap.xml') ||
     url.pathname.startsWith('/google') ||
+    url.pathname.startsWith('/ads') ||
+    url.pathname.endsWith('.png') ||
+    url.pathname.endsWith('.jpg') ||
+    url.pathname.endsWith('.svg') ||
     url.pathname.endsWith('.html') ||
     url.pathname.startsWith('/public') ||
     url.pathname.startsWith('/images')
