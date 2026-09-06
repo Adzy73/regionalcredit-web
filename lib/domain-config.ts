@@ -50,6 +50,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainBrandConfig> = {
     heroSubtext: 'Connect directly with our regional credit specialists serving Port Pirie. Fast 90-day bank check with same-day payout.',
     primaryCtaText: 'Speak to Port Pirie Agent',
     themeAccent: '#3B82F6',
+    googleSiteVerification: 'lK8PEfljTr8HzHLzjuTVnwKPbXwwiJtyyAL1xKc',
   },
   'regionalcreditline.com.au': {
     domain: 'regionalcreditline.com.au',
@@ -62,6 +63,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainBrandConfig> = {
     heroSubtext: 'Dedicated revolving credit line for Port Lincoln residents. Only pay interest on what you draw with full redraw flexibility.',
     primaryCtaText: 'Calculate Port Lincoln Line',
     themeAccent: '#F59E0B',
+    googleSiteVerification: 'zYVYywyrIQ0COBh2MKdSjfNvducsDZgOqc1Ek',
   },
 };
 
