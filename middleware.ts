@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-// Known Search Engine Crawler User-Agent Patterns (Whitelisted for SEO indexing)
+// Known Search Engine Crawler & Verification User-Agent Patterns (Whitelisted for SEO indexing & verification)
 const BOT_USER_AGENTS = [
-  /googlebot/i,
+  /google/i,
   /bingbot/i,
   /slurp/i,
   /duckduckbot/i,
@@ -73,10 +73,14 @@ export function middleware(request: NextRequest) {
     request.headers.get('x-real-ip') ||
     '';
 
-  // 1. Static Assets Bypass
+  // 1. Static Assets & Verification Bypass
   if (
     url.pathname.startsWith('/_next') ||
     url.pathname.startsWith('/favicon.ico') ||
+    url.pathname.startsWith('/robots.txt') ||
+    url.pathname.startsWith('/sitemap.xml') ||
+    url.pathname.startsWith('/google') ||
+    url.pathname.endsWith('.html') ||
     url.pathname.startsWith('/public') ||
     url.pathname.startsWith('/images')
   ) {
