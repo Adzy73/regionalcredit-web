@@ -37,6 +37,7 @@ export const DOMAIN_CONFIGS: Record<string, DomainBrandConfig> = {
     heroSubtext: 'Apply directly from your phone in Whyalla. Zero paper forms or branch visits. Rapid assessment and direct bank transfer.',
     primaryCtaText: 'Apply Online in Whyalla',
     themeAccent: '#10B981',
+    googleSiteVerification: '8RlaMkOiPpYnBvyBhcAnOFZhG42zmrwQu2-gl',
   },
   'regionalcreditdirect.com.au': {
     domain: 'regionalcreditdirect.com.au',

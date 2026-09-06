@@ -29,6 +29,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${mono.variable} antialiased dark`}>
       <head>
         <meta name="google-site-verification" content="FUReDIJSpXPZgwnrYzgSdV6RMVwCS5nFVCk" />
+        <meta name="google-site-verification" content="8RlaMkOiPpYnBvyBhcAnOFZhG42zmrwQu2-gl" />
         <JsonLdSchema />
         <Analytics />
       </head>
