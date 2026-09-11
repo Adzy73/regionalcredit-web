@@ -9,6 +9,7 @@ declare global {
     dataLayer: any[];
     gtag: (...args: any[]) => void;
     fbq: (...args: any[]) => void;
+    gtagSendEvent: (url?: string, params?: Record<string, any>) => boolean;
   }
 }
 
@@ -23,9 +24,19 @@ export const trackEvent = (eventName: string, eventParams: Record<string, any> =
     ...eventParams,
   });
 
-  // 2. GA4 Direct
+  // 2. GA4 Direct & Google Ads Conversion Event
   if (typeof window.gtag === 'function') {
     window.gtag('event', eventName, eventParams);
+
+    // Fire Google Ads Lead Conversion Event
+    if (eventName === 'lead_submitted') {
+      window.gtag('event', 'conversion_event_submit_lead_form_1', {
+        value: eventParams.amount || 0,
+        currency: 'AUD',
+        transaction_id: eventParams.leadId || '',
+        ...eventParams,
+      });
+    }
   }
 
   // 3. Meta Pixel Direct
@@ -54,6 +65,34 @@ export default function Analytics() {
 
   return (
     <>
+      {/* Google Tag (gtag.js) Delayed Navigation Helper */}
+      <Script
+        id="gtag-delayed-navigation-helper"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            // Helper function to delay opening a URL until a gtag event is sent.
+            // Call it in response to an action that should navigate to a URL.
+            function gtagSendEvent(url) {
+              var callback = function () {
+                if (typeof url === 'string') {
+                  window.location = url;
+                }
+              };
+              if (typeof gtag === 'function') {
+                gtag('event', 'conversion_event_submit_lead_form_1', {
+                  'event_callback': callback,
+                  'event_timeout': 2000
+                });
+              } else {
+                callback();
+              }
+              return false;
+            }
+          `,
+        }}
+      />
+
       {/* Google Tag Manager */}
       {gtmId && (
         <Script
