@@ -40,6 +40,29 @@ export default function RootLayout({
         <meta name="google-site-verification" content="8RlaMkOiPpYnBvyBhcAnOFZhG42zmrwQu2-gl" />
         <meta name="google-site-verification" content="lK8PEfljTr8HzHLzjuTVnwKPbXwwiJtyyAL1xKc" />
         <meta name="google-site-verification" content="zYVYywyrIQ0COBh2MKdSjfNvducsDZgOqc1Ek" />
+        {/* Google tag (gtag.js) event - delayed navigation helper */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              function gtagSendEvent(url) {
+                var callback = function () {
+                  if (typeof url === 'string') {
+                    window.location = url;
+                  }
+                };
+                if (typeof gtag === 'function') {
+                  gtag('event', 'conversion_event_submit_lead_form_1', {
+                    'event_callback': callback,
+                    'event_timeout': 2000
+                  });
+                } else {
+                  callback();
+                }
+                return false;
+              }
+            `,
+          }}
+        />
         <JsonLdSchema />
         <Analytics />
       </head>
