@@ -1,7 +1,7 @@
 import { LeadSubmission } from './lead-storage';
 
 export const AGENT_CONTACTS = [
-  { name: 'Adam (Spare)', phone: '0439726576' },
+  { name: 'Chelsea', phone: '0434877310' },
 ];
 
 const CLICKSEND_USERNAME = process.env.CLICKSEND_USERNAME || 'modburysa@cashconverters.com';

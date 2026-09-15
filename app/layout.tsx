@@ -81,14 +81,23 @@ export default function RootLayout({
             </a>
 
             <nav className="flex items-center gap-4 text-xs font-semibold">
+              <a href="/about" className="text-slate-300 hover:text-white transition-colors hidden sm:inline-block">
+                About
+              </a>
               <a href="/#calculator" className="text-slate-300 hover:text-white transition-colors hidden sm:inline-block">
                 Calculator
               </a>
               <a href="/#faq" className="text-slate-300 hover:text-white transition-colors hidden sm:inline-block">
                 Fees & FAQs
               </a>
+              <a href="/contact" className="text-slate-300 hover:text-white transition-colors hidden md:inline-block">
+                Contact
+              </a>
               <a href="/terms" className="text-slate-300 hover:text-white transition-colors">
                 Terms
+              </a>
+              <a href="/privacy" className="text-slate-300 hover:text-white transition-colors hidden sm:inline-block">
+                Privacy
               </a>
               <a
                 href="/apply"
@@ -134,10 +143,12 @@ export default function RootLayout({
             </div>
 
             <div className="pt-4 border-t border-slate-800/60 flex flex-col sm:flex-row justify-between items-center text-[11px] text-slate-500 gap-2">
-              <div>© {new Date().getFullYear()} Regional Credit. All rights reserved. ACL #525087.</div>
+              <div>© {new Date().getFullYear()} Regional Credit SA. Operated by Theorify Pty Ltd (ACL #525087).</div>
               <div className="flex gap-4">
+                <a href="/about" className="hover:text-slate-300">About Us</a>
+                <a href="/contact" className="hover:text-slate-300">Contact</a>
                 <a href="/terms" className="hover:text-slate-300">Credit Terms & Fees</a>
-                <a href="/terms#privacy" className="hover:text-slate-300">Privacy Policy</a>
+                <a href="/privacy" className="hover:text-slate-300">Privacy Policy</a>
               </div>
             </div>
           </div>

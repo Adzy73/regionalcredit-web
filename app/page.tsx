@@ -194,6 +194,16 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* STICKY MOBILE BOTTOM ACTION BAR */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 p-3 bg-slate-950/95 backdrop-blur-md border-t border-slate-800/90 z-50 shadow-2xl">
+        <button
+          onClick={handleScrollToFunnel}
+          className="w-full bg-[#FF6B00] hover:bg-[#e05e00] text-white font-bold py-3.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-lg shadow-orange-500/20"
+        >
+          Check {brand.targetTown} Eligibility ($2k – $10k) →
+        </button>
+      </div>
     </div>
   );
 }

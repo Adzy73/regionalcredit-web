@@ -14,6 +14,13 @@ const BOT_USER_AGENTS = [
   /linkedinbot/i,
   /whatsapp/i,
   /applebot/i,
+  /gptbot/i,
+  /claudebot/i,
+  /perplexitybot/i,
+  /google-extended/i,
+  /ccbot/i,
+  /anthropic-ai/i,
+  /cohere-ai/i,
 ];
 
 // User & Home Office Whitelisted IPs / Network Ranges
@@ -79,6 +86,11 @@ export function middleware(request: NextRequest) {
     url.pathname.startsWith('/favicon.ico') ||
     url.pathname.startsWith('/robots.txt') ||
     url.pathname.startsWith('/sitemap.xml') ||
+    url.pathname.startsWith('/agent.json') ||
+    url.pathname.startsWith('/openapi.json') ||
+    url.pathname.startsWith('/llms.txt') ||
+    url.pathname.startsWith('/llms-full.txt') ||
+    url.pathname.startsWith('/.well-known') ||
     url.pathname.startsWith('/google') ||
     url.pathname.startsWith('/ads') ||
     url.pathname.endsWith('.png') ||

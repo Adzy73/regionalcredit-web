@@ -11,6 +11,8 @@ export interface DomainBrandConfig {
   themeAccent: string;
   googleSiteVerification?: string;
   ga4MeasurementId?: string;
+  googleAdsId?: string;
+  googleAdsLabel?: string;
 }
 
 export const DOMAIN_CONFIGS: Record<string, DomainBrandConfig> = {
