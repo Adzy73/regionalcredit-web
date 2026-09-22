@@ -80,7 +80,7 @@ export default function RootLayout({
               </span>
             </a>
 
-            <nav className="flex items-center gap-4 text-xs font-semibold">
+            <nav className="flex items-center gap-3 text-xs font-semibold">
               <a href="/about" className="text-slate-300 hover:text-white transition-colors hidden sm:inline-block">
                 About
               </a>
@@ -93,17 +93,22 @@ export default function RootLayout({
               <a href="/contact" className="text-slate-300 hover:text-white transition-colors hidden md:inline-block">
                 Contact
               </a>
-              <a href="/terms" className="text-slate-300 hover:text-white transition-colors">
+              <a href="/terms" className="text-slate-300 hover:text-white transition-colors hidden sm:inline-block">
                 Terms
               </a>
-              <a href="/privacy" className="text-slate-300 hover:text-white transition-colors hidden sm:inline-block">
-                Privacy
+              <a
+                href="tel:0423808559"
+                className="bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-2 rounded-xl transition-all font-bold flex items-center gap-1.5 shadow-md shadow-emerald-600/20"
+              >
+                <span>📞</span>
+                <span className="hidden sm:inline">Call Agent</span>
+                <span className="sm:hidden">Call</span>
               </a>
               <a
                 href="/apply"
-                className="bg-[#FF6B00] hover:bg-[#e05e00] text-white px-4 py-2 rounded-xl transition-all font-bold shadow-md shadow-orange-500/20"
+                className="bg-[#FF6B00] hover:bg-[#e05e00] text-white px-3.5 py-2 rounded-xl transition-all font-bold shadow-md shadow-orange-500/20"
               >
-                Apply Now
+                Apply
               </a>
             </nav>
           </div>
