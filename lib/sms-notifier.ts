@@ -1,6 +1,7 @@
 import { LeadSubmission } from './lead-storage';
 
 export const AGENT_CONTACTS = [
+  { name: 'Adam', phone: '0423808559' },
   { name: 'Chelsea', phone: '0434877310' },
 ];
 
