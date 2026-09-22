@@ -4,6 +4,11 @@ import type { NextRequest } from 'next/server';
 // Known Search Engine Crawler & Verification User-Agent Patterns (Whitelisted for SEO indexing & verification)
 const BOT_USER_AGENTS = [
   /google/i,
+  /adsbot/i,
+  /mediapartners/i,
+  /googlebot/i,
+  /feedfetcher-google/i,
+  /gsa-crawler/i,
   /bingbot/i,
   /slurp/i,
   /duckduckbot/i,
@@ -103,16 +108,19 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // 2. Admin Preview & Laptop Cookie Bypass
+  // 2. Admin Preview, Laptop Cookie & Google Ads Click Bypass
   const bypassKey = url.searchParams.get('preview_key') || request.headers.get('x-preview-key');
   const hasAdminCookie = request.cookies.get('admin_access')?.value === 'true';
+  const isGoogleAdsClick = url.searchParams.has('gclid') || url.searchParams.has('gbraid') || url.searchParams.has('wbraid') || url.searchParams.get('utm_source')?.includes('google');
 
-  if (bypassKey === 'pawnpass-admin-2026' || url.searchParams.has('admin') || hasAdminCookie) {
+  if (bypassKey === 'pawnpass-admin-2026' || url.searchParams.has('admin') || hasAdminCookie || isGoogleAdsClick) {
     const response = NextResponse.next();
-    response.cookies.set('admin_access', 'true', {
-      maxAge: 60 * 60 * 24 * 365, // 1 year admin bypass cookie for laptop
-      path: '/',
-    });
+    if (bypassKey === 'pawnpass-admin-2026' || url.searchParams.has('admin')) {
+      response.cookies.set('admin_access', 'true', {
+        maxAge: 60 * 60 * 24 * 365, // 1 year admin bypass cookie for laptop
+        path: '/',
+      });
+    }
     return response;
   }
 
