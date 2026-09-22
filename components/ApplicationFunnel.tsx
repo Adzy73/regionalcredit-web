@@ -230,6 +230,15 @@ export default function ApplicationFunnel({ initialAmount = 5000 }: ApplicationF
             <p className="text-xs text-slate-400 mt-1">
               Enter your SA postcode to verify service area eligibility.
             </p>
+            <div className="mt-3 p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-[11px] text-slate-300 flex items-center justify-between gap-2">
+              <span className="flex items-center gap-1.5 font-medium">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Live Callback SLA: <strong>Avg 12 Mins</strong></span>
+              </span>
+              <a href="tel:0434877310" className="text-emerald-400 font-bold hover:underline flex items-center gap-1">
+                <span>📞 Call Chelsea Now</span>
+              </a>
+            </div>
           </div>
 
           <div className="space-y-4">
