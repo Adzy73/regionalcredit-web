@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { headers } from 'next/headers';
 import { Inter, JetBrains_Mono } from 'next/font/google';
 import JsonLdSchema from '@/components/JsonLdSchema';
 import Analytics from '@/components/Analytics';
@@ -28,14 +29,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const headersList = await headers();
+  const host = headersList.get('host') || 'regionalcredit.au';
+  const canonicalUrl = `https://${host.replace(/^www\./, '')}`;
+
   return (
     <html lang="en" className={`${inter.variable} ${mono.variable} antialiased dark`}>
       <head>
+        <link rel="canonical" href={canonicalUrl} />
         <meta name="google-site-verification" content="FUReDIJSpXPZgwnrYzgSdV6RMVwCS5nFVCk" />
         <meta name="google-site-verification" content="8RlaMkOiPpYnBvyBhcAnOFZhG42zmrwQu2-gl" />
         <meta name="google-site-verification" content="lK8PEfljTr8HzHLzjuTVnwKPbXwwiJtyyAL1xKc" />
@@ -84,7 +90,14 @@ export default function RootLayout({
               <a href="/about" className="text-slate-300 hover:text-white transition-colors hidden sm:inline-block">
                 About
               </a>
-              <a href="/#calculator" className="text-slate-300 hover:text-white transition-colors hidden sm:inline-block">
+              <a
+                href="tel:0439726576"
+                className="bg-emerald-950/80 border border-emerald-500/40 text-emerald-400 hover:bg-emerald-900 px-3 py-1.5 rounded-xl transition-all font-bold text-xs flex items-center gap-1.5"
+              >
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <span>Call Chelsea: <strong className="text-white">0439 726 576</strong></span>
+              </a>
+              <a href="/#calculator" className="text-slate-300 hover:text-white transition-colors hidden md:inline-block">
                 Calculator
               </a>
               <a href="/#faq" className="text-slate-300 hover:text-white transition-colors hidden sm:inline-block">
@@ -158,6 +171,25 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+        {/* Sticky Mobile Phone Bar */}
+        <div className="fixed bottom-0 left-0 right-0 z-50 sm:hidden bg-slate-900/95 backdrop-blur border-t border-slate-800 p-3 shadow-2xl flex items-center justify-between gap-3">
+          <a
+            href="tel:0439726576"
+            className="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm py-3 px-4 rounded-xl flex items-center justify-center gap-2 shadow-lg active:scale-95 transition-all"
+          >
+            <span className="text-base">📞</span>
+            <span>Call Chelsea: 0439 726 576</span>
+          </a>
+          <a
+            href="https://wa.me/61439726576?text=Hi%20Chelsea%2C%20I%20have%20an%20enquiry%20about%20a%20Personal%20Line%20of%20Credit."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#25D366] text-white p-3 rounded-xl text-lg font-bold flex items-center justify-center shadow-md active:scale-95 transition-all shrink-0"
+            title="SMS / WhatsApp"
+          >
+            💬
+          </a>
+        </div>
       </body>
     </html>
   );
