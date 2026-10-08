@@ -16,6 +16,10 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://regionalcredit.au'),
+  alternates: {
+    canonical: './',
+  },
   title: 'Regional Credit SA | Flexible Personal Line of Credit up to $10,000',
   description: 'Flexible personal line of credit for regional South Australia residents. $0 establishment fees, $0 monthly fees. Fast online pre-approval and live agent callbacks.',
   keywords: 'line of credit SA, regional loans, fast cash loans Port Pirie, Whyalla loans, Mount Gambier line of credit',
